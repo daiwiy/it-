@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.body {
+.body {height: 100%;
     Font-size: 62.5%;
 }
 .aad{width:100%;
@@ -13,19 +13,19 @@
 .head {
     padding-top: 2em;
     padding-bottom: 2em;
-    height: 1em;
+    height: 37px;
     background-color: #5fc0cd;
     text-align: center;
 }
 
 .head-one {
-    height: 20px;
-    width: 20px;
+    height: 37px;
+    width: 22px;
     float: left;
 }
 
 .head-twe {
-    font-size: 20px;
+    font-size: 36px;
     color: #ffffff;
 }
 
@@ -43,7 +43,6 @@
 .photograph-one {
     height: 7em;
     width: 7em;
-    padding-right: 1em;
 }
 
 .photograph-twe {
@@ -53,23 +52,18 @@
 
 .photograph-chree {
     height: 7em;
-    width: 6em;
-    padding-top: 3em;
-}
-
-.text-3 {
-    text-align: left;
-    margin: 3em 0em 1em 0em;
+    width: 10em;
+    padding-top: 2em;
 }
 
 .a {
-    width: 10em;
+    width: 12em;
     height: 2em;
 }
 
 .middle {
     font-size:20px;
-    padding: 1em 0em 1em 1em;
+    padding: 1em 0em 1em 0.5em;
 }
 
 .middle-twe {
@@ -84,30 +78,22 @@
 .middle-five {
     padding: 1em 0em 1em 2em;
 }
-.middle-six{height:auto;
+.middle-six{
     padding: 1em 0em 1em 2em;
+    border-bottom: 2px solid rgba(200,200,200,1);
     display: flex;
-    border-bottom-style:solid ;
+
 }
 .middle-ten{
     color:red;
 }
-.middle-2{min-width:5em;
-align-items:center； 
-}
-.middle-1{height: auto;
-    width:90%;
-    text-align:left;
-}
-.foot {
+.middle-2{min-width:5em; 
     display: flex;
-    height: 1em;
-    width: auto;
+    align-items: center;
+    color:rgba(200,200,200,1);
 }
-
 .foot-one {
     width: 46%;
-    border: solid #5fc0cd;
     margin: 2%;
     border-radius: 10px;
     position:fixed;
@@ -118,11 +104,11 @@ align-items:center；
 .foot-twe {
     width: 46%;
     margin: 2%;
-    border: solid #5fc0cd;
     border-radius: 10px;
     position: fixed;
     right: 0em;
     bottom: 0em;
 }
-.ca{color:  #5fc0cd
+.ca{ padding-right:10px;
+    color: #5fc0cd
 }
