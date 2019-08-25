@@ -92,6 +92,10 @@
     align-items: center;
     color:rgba(200,200,200,1);
 }
+.blank {
+    height:90px;
+    width:100%;
+}
 .foot-one {
     width: 46%;
     margin: 2%;
