@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-size: 14px;
+    font-size: .875rem;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    padding: 16px 5px 10px 5px;
+    background-color: #5fc0cd;
+    position: relative;
+}
+
+.header-one {
+    position: absolute;
+    top: 16px;
+    left: 31%;
+    width: 20%;
+}
+
+.header-twe {
+    width: 20%;
+    position: absolute;
+    top: 16px;
+    left: 49%;
+}
+
+.header-three {
+    min-width: 42px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+
+.main-one {
+    height: auto;
+    padding: 0.5rem;
+}
+
+.add {
+    overflow: scroll;
+    width: 100%;
+    height: auto;
+}
+.boos {
+    position: relative;
+}
+@media screen and (width: 1200px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 8px;
+    }
+}
