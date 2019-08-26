@@ -44,6 +44,8 @@
 }
 
 .header-five {
+    height: 2rem;
+    width: 2rem;
     position: absolute;
     right: 1rem;
     top: 1rem;
@@ -59,7 +61,7 @@
 .top-one {
     display: flex;
     height: 2rem;
-    width: 20%;
+    width: 23%;
 }
 
 .top-twe {
@@ -68,36 +70,46 @@
     width: 100%;
     border-right: 2px solid #e8ebed;
     color: #999999;
-    width: 
 }
 
 .add {
     width: 100%;
     overflow: scroll;
 }
+
 .main-one {
-    border-top:1px #999999 solid;
-    border-bottom:1px #999999 solid;
+    border-top: 1px #999999 solid;
+    border-bottom: 1px #999999 solid;
     padding: 1rem 0 1rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
 .main-twe {
     height: 2rem;
 }
+
 .main-three {
-    font-size:2rem;
-    color:#999999;
+    font-size: 2rem;
+    color: #999999;
 }
+
 .main-four {
-    font-size:2rem;padding:0.5em 0 0.5em 1em;
+    font-size: 2rem;
+    padding: 0.5em 0 0.5em 1em;
 }
+
 .main-five {
-    color:red;
+    color: red;
     float: right;
     font-size: 2rem;
 }
+
 .main-six {
-    height:1.5rem;
+    height: 1.5rem;
 }
+
 .boss {
     width: 100%;
     background-color: #f8fafb;
@@ -106,20 +118,34 @@
     height: 100px;
     position: fixed;
     bottom: 0;
-    font-size: 20px;
+    font-size: 22px;
 }
+
 .boss-one {
-    width:46px
+    width: 46px;
+    height: 80px;
+    background: none;
+    border: none;
 }
+
 .boss-twe {
-    height:40px;
-    width:46px;
+    height: 40px;
+    width: 46px;
     padding-top: 10px;
 }
-.boss-three {
-    height:94px;
-    width:94px;
+
+.boss-ten {
+    width: 94px;
+    height: 94px;
+    background: none;
+    border: none;
 }
+
+.boss-three {
+    background: none;
+    border: none;
+}
+
 @media screen and (max-width: 12560px) {
     html {
         font-size: 28x;
