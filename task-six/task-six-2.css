@@ -5,7 +5,7 @@
 
 .header {
     background-color: #5fc0cd;
-    height: 70px;
+    height: 3rem;
     padding: 0.5rem 0.5rem 0.5rem 0;
     display: flex;
     position: relative;
@@ -18,12 +18,32 @@
 }
 
 .header-twe {
+    height: 3rem;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    background-color: #55a8b3;
+    font-size: 2rem;
+}
+
+.header-three {
     width: 20%;
     position: absolute;
     left: 49%;
 }
 
-.header-three {
+.header-four {
+    height: 3rem;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    color: #5fc0cd;
+    background-color: #ffffff;
+    font-size: 2rem;
+}
+
+.header-five {
     position: absolute;
     right: 1rem;
     top: 1rem;
@@ -36,10 +56,48 @@
     justify-content: space-around;
 }
 
-.add {width: 100%;
-    overflow: scroll;
+.top-one {
+    display: flex;
+    height: 2rem;
+    width: 20%;
 }
 
+.top-twe {
+    border: none;
+    font-size: 1.5rem;
+    width: 100%;
+    border-right: 2px solid #e8ebed;
+    color: #999999;
+    width: 
+}
+
+.add {
+    width: 100%;
+    overflow: scroll;
+}
+.main-one {
+    border-top:1px #999999 solid;
+    border-bottom:1px #999999 solid;
+    padding: 1rem 0 1rem 0;
+}
+.main-twe {
+    height: 2rem;
+}
+.main-three {
+    font-size:2rem;
+    color:#999999;
+}
+.main-four {
+    font-size:2rem;padding:0.5em 0 0.5em 1em;
+}
+.main-five {
+    color:red;
+    float: right;
+    font-size: 2rem;
+}
+.main-six {
+    height:1.5rem;
+}
 .boss {
     width: 100%;
     background-color: #f8fafb;
@@ -48,11 +106,23 @@
     height: 100px;
     position: fixed;
     bottom: 0;
+    font-size: 20px;
 }
-
+.boss-one {
+    width:46px
+}
+.boss-twe {
+    height:40px;
+    width:46px;
+    padding-top: 10px;
+}
+.boss-three {
+    height:94px;
+    width:94px;
+}
 @media screen and (max-width: 12560px) {
     html {
-        font-size: 32px;
+        font-size: 28x;
     }
 }
 
@@ -74,19 +144,19 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width:560px) {
     html {
         font-size: 12px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     html {
         font-size: 10px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
     html {
         font-size: 8px;
     }
