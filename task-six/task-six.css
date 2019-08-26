@@ -10,46 +10,58 @@
 
 .header {
     height: 70px;
-    width: 100%;
+    width: auto;
     padding: 16px 5px 10px 5px;
     background-color: #5fc0cd;
-    position: relative;
 }
 
 .header-one {
-    position: absolute;
+    width: 100%;
+    position: fixed;
     top: 16px;
-    left: 31%;
-    width: 20%;
+    left: 29%;
 }
 
 .header-twe {
-    width: 20%;
-    position: absolute;
+    width: 100%;
+    position: fixed;
     top: 16px;
-    left: 49%;
+    left: 50%;
 }
 
 .header-three {
     min-width: 42px;
-    position: absolute;
+    position: fixed;
     right: 10px;
     top: 30px;
 }
 
-.main-one {
-    height: auto;
-    padding: 0.5rem;
+.foot-boss {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+        width: 100%;
+    height: 15rem;
+    background:red; 
 }
 
-.add {
-    overflow: scroll;
-    width: 100%;
-    height: auto;
+.foot-one {
+align-items: center;
+width:30%;
+
 }
-.boos {
-    position: relative;
+
+.foot-twe {
+    align-items: center;
+    width:30%;
+    padding: 0 auto;
 }
+
+.foot-three {
+    align-items: center;
+    width:30%;
+}
+
 @media screen and (width: 1200px) {
     html {
         font-size: 20px;
