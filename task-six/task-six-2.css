@@ -170,7 +170,7 @@
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -180,14 +180,19 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 470px) {
     html {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
     html {
         font-size: 8px;
+    }
+}
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 6px;
     }
 }
