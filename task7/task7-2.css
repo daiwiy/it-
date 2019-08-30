@@ -35,7 +35,11 @@
     background-color: #29bde0;
     border: none;
 }
-
+.photo-three {
+    float: right;
+    background-color: #b9e9f5;
+    border: none;
+}
 .main {
     background-color: #b9e9f5;
     height: 6rem;
@@ -72,7 +76,7 @@
 .middle-three {
     display: flex;
     justify-content: space-around;
-    height: 50rem;
+    height: 13.5rem;
     width: 100%;
     background: #29bde0;
     overflow: auto;
@@ -80,30 +84,40 @@
 
 .middle-four {
     background: #f5c97b;
-    height: 14rem;
-    width: 14rem;
-    border:4px solid #ffffff;
+    height: 9rem;
+    width: 9rem;
+    border: 4px solid #ffffff;
 }
 
 .middle-five {
-    height:11rem;
+    height: 6.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
 }
+.middle-four:hover .middle-seven
+{   display: flex;
+}
+.middle-seven {
+    display: none;
+}
+
 
 .middle-six {
     background: #83b09a;
     text-align: center;
-    height: 2.4rem;
+    height: 2rem;
     font-size: 2.2rem;
-    color:#c1d7cc;
-}
-.middle-seven {
-
+    color: #c1d7cc;
+    z-index: 5;
 }
 
+
+.kj {
+    height: 12rem;
+    width: 100%;
+}
 .footer {
     height: 12rem;
     width: 100%;
@@ -124,8 +138,8 @@
     height: 7rem;
 }
 
-@media screen and (max-width:378px) {
+@media screen and (max-width:768px) {
     html {
-        font-size: 14px;
+        font-size: 50%;
     }
 }
