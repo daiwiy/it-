@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    font-size: 0.875rem;
+}
+
+.add {
+    overflow: auto;
+}
+
+.head {
+    background-color: #29bde0;
+    width: 100%;
+    height: 8rem;
+    padding: 3rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.head-one {
+    font-size: 3.4rem;
+    color: #ffffff;
+}
+
+.photo-one {
+    float: left;
+    background-color: #29bde0;
+    border: none;
+}
+
+.photo-twe {
+    float: right;
+    background-color: #29bde0;
+    border: none;
+}
+
+.main {
+    background-color: #b9e9f5;
+    height: 6rem;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.main-one {
+    font-size: 2.6rem;
+}
+
+.main-twe {
+    float: right;
+}
+
+.middle {
+    background: #29bde0;
+    height: 6rem;
+    width: 100%;
+    padding: 1rem 0 1rem 3.5rem;
+    position: relative;
+}
+
+.middle-one {
+    position: absolute;
+    top: 0;
+}
+
+.middle-twe {
+    font-size: 2.4rem;
+    color: #c9eef7;
+}
+
+.middle-three {
+    display: flex;
+    justify-content: space-around;
+    height: 50rem;
+    width: 100%;
+    background: #29bde0;
+    overflow: auto;
+}
+
+.middle-four {
+    background: #f5c97b;
+    height: 14rem;
+    width: 14rem;
+    border:4px solid #ffffff;
+}
+
+.middle-five {
+    height:11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.middle-six {
+    background: #83b09a;
+    text-align: center;
+    height: 2.4rem;
+    font-size: 2.2rem;
+    color:#c1d7cc;
+}
+.middle-seven {
+
+}
+
+.footer {
+    height: 12rem;
+    width: 100%;
+    background: #29bde0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-one {
+    background: #fbb435;
+    font-size: 40px;
+    color: #ffffff;
+    border: none;
+    width: 70%;
+    height: 7rem;
+}
+
+@media screen and (max-width:378px) {
+    html {
+        font-size: 14px;
+    }
+}
