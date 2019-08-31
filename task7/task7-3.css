@@ -119,6 +119,7 @@
     position: fixed;
     justify-content: space-around;
     bottom: 0;
+    opacity: 0.5; 
 }
 
 .footer-one {
@@ -129,6 +130,7 @@
     border: none;
     font-size: 4rem;
     color: #ffffff;
+    opacity: 1;
 }
 
 .footer-twe {
@@ -139,11 +141,13 @@
     border: none;
     font-size: 4rem;
     color: #ffffff;
+    opacity:1;
 }
 
 .footer-one-ci {
     width: 45%;
     height: 7rem;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1440px) {
