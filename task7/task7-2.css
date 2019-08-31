@@ -13,9 +13,9 @@
 
 .head {
     background-color: #29bde0;
-    width: 100%;
+    width:94%;
     height: 8rem;
-    padding: 3rem 0 1rem 0;
+    padding: 3rem 3% 1rem 3%;
     text-align: center;
 }
 
@@ -43,8 +43,8 @@
 .main {
     background-color: #b9e9f5;
     height: 6rem;
-    width: 100%;
-    padding: 1.5rem 0 1.5rem 0;
+    width: 91%;
+    padding: 1.5rem 3% 1.5rem 6%;
 }
 
 .main-one {
@@ -58,8 +58,8 @@
 .middle {
     background: #29bde0;
     height: 6rem;
-    width: 100%;
-    padding: 1rem 0 1rem 0;
+    width: 89%;
+    padding: 1rem 0 1rem 11%;
     position: relative;
 }
 
