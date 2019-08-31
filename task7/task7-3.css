@@ -30,20 +30,38 @@
 }
 
 .main {
-    height: 23rem;
-    background: #29bde0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: url(./jiangbei.png);
+    background-size: 301px 205px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #29bde0;
+    height: 18rem;
     padding: 2rem 0 2rem 0;
-    font-size: 3.3rem;
-    color: #ffc865;
+    position: relative;
 }
 
 .main-one {
-    width: 75%;
+    position: absolute;
+    bottom: 3.7rem;
+    text-align: center;
+    width: 100%;
 }
 
+.main-twe {
+    color: #ffffff;
+    font-size: 4rem;
+}
+.main-four {
+    color: #fbb435;
+    font-size:3.3rem;
+    background: #29bde0;
+    width: 100%;
+   padding-bottom:3rem; 
+}
+.main-five {
+     margin: 0 auto;
+     width: 75%;
+}
 .middle {
     background: #29bde0;
     font-size: 2.6rem;
@@ -71,17 +89,20 @@
     color: #a6a6a6;
     float: right;
 }
+
 .middle-five {
     margin: 0 auto;
     width: 75%;
     padding: 1rem;
 }
+
 .dl3 {
     font-size: 2.6rem;
     color: #a6a6a6;
 }
-.middle-six{
-    border-bottom:2px solid #dddddd; 
+
+.middle-six {
+    border-bottom: 2px solid #dddddd;
 }
 
 .foot {
@@ -124,16 +145,19 @@
     width: 45%;
     height: 7rem;
 }
+
 @media screen and (max-width: 1440px) {
     html {
         font-size: 70%;
     }
 }
+
 @media screen and (max-width: 1024px) {
     html {
         font-size: 50%;
     }
 }
+
 @media screen and (max-width: 870px) {
     html {
         font-size: 40%;
