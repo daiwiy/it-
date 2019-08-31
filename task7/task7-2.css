@@ -13,7 +13,7 @@
 
 .head {
     background-color: #29bde0;
-    width:94%;
+    width: 94%;
     height: 8rem;
     padding: 3rem 3% 1rem 3%;
     text-align: center;
@@ -35,11 +35,13 @@
     background-color: #29bde0;
     border: none;
 }
+
 .photo-three {
     float: right;
     background-color: #b9e9f5;
     border: none;
 }
+
 .main {
     background-color: #b9e9f5;
     height: 6rem;
@@ -96,28 +98,32 @@
     align-items: center;
     font-size: 3rem;
 }
-.middle-four:hover .middle-seven
-{   display: flex;
-}
-.middle-seven {
-    display: none;
-}
-
 
 .middle-six {
     background: #83b09a;
     text-align: center;
-    height: 2rem;
+    height: 2.5rem;
     font-size: 2.2rem;
     color: #c1d7cc;
     z-index: 5;
 }
 
+.middle-four:hover .middle-seven {
+    display: flex;
+}
+
+.middle-seven {
+    padding-top: 1rem;
+    display: none;
+    justify-content: space-around;
+
+}
 
 .kj {
     height: 12rem;
     width: 100%;
 }
+
 .footer {
     height: 12rem;
     width: 100%;
