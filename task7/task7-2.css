@@ -17,15 +17,15 @@
     z-index: 10;
 }
 .my-all {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 19rem;
+    height: 1500px;
 }
 .head {
     background-color: #29bde0;
     width: auto;
     height: 3rem;
-    padding: 3rem 2rem 1rem 2rem;
+    padding: 30px 24px 10px 24px;
     text-align: center;
 }
 
@@ -49,8 +49,8 @@
 .main {
     background-color: #b9e9f5;
     height: 3rem;
-    width: 91%;
-    padding: 1.5rem 3% 1.5rem 6%;
+    width: 94%;
+    padding: 1.5rem 0 1.5rem 6%;
     position: relative;
     display: flex;
 }
@@ -64,7 +64,7 @@
 .main-twe {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 18px;
 }
 
 .middle {
@@ -90,6 +90,10 @@
 
 
 .middle-three {
+    position: absolute;
+    top: 18rem;
+    bottom: 20rem;
+    height: auto;
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
@@ -133,16 +137,12 @@
 }
 
 .middle-seven {
-    padding-top: 1rem;
+    padding-top: 24px;
     position: relative;
     left: -1rem;
     width: 15.2rem;
     display: none;
     justify-content: space-around;
-}
-.kk {
-    height: 20rem;
-    width: 100%;
 }
 
 .footer {
