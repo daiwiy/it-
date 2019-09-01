@@ -6,7 +6,9 @@
 html {
     font-size: 62.5%;
 }
-
+body {
+    background: #f0f0f0;
+}
 .head {
     background: #29bde0;
     padding: 1rem 0 1rem 1rem;
@@ -29,78 +31,88 @@ html {
 .main {
     text-align: center;
     background-color: #f0f0f0;
-    color: #999999;
-    height: 80rem;
 }
 
-.main-photo {
-    float: right;
+.main-one {
+    background: #ffffff;
+    border: 2px solid #c9c9c9;
+    height: 112px;
+    margin: 3rem 6% 3rem 6%;
+    width: 88%;
+    padding-right: 1rem;
+    font-size: 3.4rem;
+    position: relative;
+
+}
+
+.main-twe {
+    position: absolute;
+    right: 1rem;
+    top:2.5rem;
     height: 4rem;
     width: 2.4rem;
 }
 
-.main-ten {
+.main-three {
     background: #ffffff;
-    border: 2px solid #c9c9c9;
-    height: 8rem;
-    margin: 2rem 0 2rem 0;
-    width: 85%;
-    padding-right: 1rem;
-    font-size: 3.4rem;
-}
-
-.main-twe {
-    color: #ffcc33;
-    font-size: 3.7rem;
-    margin: 0 auto;
-    background: #ffffff;
-    width: 100%;
-    padding: 2rem 0 2rem 0;
-    border-bottom: 2px solid #ffcc33;
-}
-
-.main-background {
-    background: #ffffff;
-    width: 85%;
-    margin: 0 auto;
+    width: 88%;
+    margin: 0 6% 0 6%;
     border-top: 2px solid #c9c9c9;
     border-left: 2px solid #c9c9c9;
     border-right: 2px solid #c9c9c9;
     border-bottom: 2px solid #c9c9c9;
 }
 
+.main-four {
+    color: #ffcc33;
+    font-size: 3.7rem;
+    height: 90px;
+    background: #ffffff;
+    border-bottom: 2px solid #ffcc33;
+    display: flex;
+    align-items: center;
+}
+
+.kk1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .main-href {
-    width: 70%;
+    width: 81.5%;
     border: none;
     background: #29bde0;
     margin: 2rem 0 1rem 0;
     color: #ecf9fc;
-    height: 7rem;
+    height: 13.5rem;
     font-size: 3.2rem;
 }
 
-.main-four {
-    width: 70%;
+.main-five {
+    width: 81.5%;
     border: none;
     background: #29bde0;
     margin: 1rem 0 1rem 0;
     color: #ecf9fc;
-    height: 7rem;
+    height: 13.5rem;
     font-size: 3.2rem;
+    position: relative;
 }
 
 .main-text {
     font-size: 2.4rem;
+    height: 3rem;
 }
 
 .dl1 {
     position: relative;
 }
 
-.dl2 {text-align: center;
+.dl2 {
+    text-align: center;
     height: 3rem;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     width: 100px;
     margin: 0 auto;
 }
@@ -130,11 +142,11 @@ html {
     background: #f0f0f0;
     height: 17px;
     width: 18px;
-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .dl3:hover {
-background: #29bde0;
+    background: #29bde0;
 }
 
 .dl4:hover {
@@ -152,11 +164,11 @@ background: #29bde0;
 .main-photo-twe {
     position: absolute;
     right: 1rem;
+    bottom: 27rem;
 }
-
 @media screen and (max-width: 768px) {
     html {
-        font-size: 40%;
+        font-size: 50%;
     }
 }
 
@@ -170,4 +182,15 @@ background: #29bde0;
     html {
         font-size: 20%;
     }
+}
+
+@media screen and (max-width: 630px) {
+      .main-five  {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 630px) {
+    .main-href  {
+      width: 60%;
+  }
 }

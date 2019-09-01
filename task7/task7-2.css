@@ -11,11 +11,21 @@
     overflow: auto;
 }
 
+.all {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.my-all {
+    position: absolute;
+    width: 100%;
+    top: 19rem;
+}
 .head {
     background-color: #29bde0;
-    width: 94%;
-    height: 8rem;
-    padding: 3rem 3% 1rem 3%;
+    width: auto;
+    height: 3rem;
+    padding: 3rem 2rem 1rem 2rem;
     text-align: center;
 }
 
@@ -36,33 +46,35 @@
     border: none;
 }
 
-.photo-three {
-    float: right;
-    background-color: #b9e9f5;
-    border: none;
-}
-
 .main {
     background-color: #b9e9f5;
-    height: 6rem;
+    height: 3rem;
     width: 91%;
     padding: 1.5rem 3% 1.5rem 6%;
+    position: relative;
+    display: flex;
 }
 
 .main-one {
     font-size: 2.6rem;
+    display: flex;
+    align-items: center;
 }
 
 .main-twe {
-    float: right;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 .middle {
     background: #29bde0;
-    height: 6rem;
+    height: 4rem;
     width: 89%;
     padding: 1rem 0 1rem 11%;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .middle-one {
@@ -75,34 +87,42 @@
     color: #c9eef7;
 }
 
+
+
 .middle-three {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: space-around;
-    height: 13.5rem;
     width: 100%;
     background: #29bde0;
-    overflow: auto;
 }
 
 .middle-four {
-    background: #f5c97b;
-    height: 9rem;
-    width: 9rem;
+    height: 14rem;
+    width: 14rem;
     border: 4px solid #ffffff;
-}
 
+    
+}
+.box {
+    width: 30%;
+    height: 14rem;
+    text-align: center;
+    margin-bottom:7rem; 
+}
 .middle-five {
-    height: 6.5rem;
+    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+        background: #f5c97b;
 }
 
 .middle-six {
     background: #83b09a;
     text-align: center;
-    height: 2.5rem;
+    height: 3.1rem;
     font-size: 2.2rem;
     color: #c1d7cc;
     z-index: 5;
@@ -116,23 +136,21 @@
     padding-top: 1rem;
     display: none;
     justify-content: space-around;
-
 }
-
-.kj {
-    height: 12rem;
+.kk {
+    height: 20rem;
     width: 100%;
 }
 
 .footer {
-    height: 12rem;
+    height: 144px;
     width: 100%;
     background: #29bde0;
     text-align: center;
     position: fixed;
     bottom: 0;
-    padding-top: 3.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
 }
 
 .footer-one {
@@ -141,11 +159,36 @@
     color: #ffffff;
     border: none;
     width: 70%;
-    height: 7rem;
+    height: 9rem;
 }
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:2560px) {
+    html {
+        font-size: 70%;
+    }
+}
+@media screen and (max-width:1440px) {
+    html {
+        font-size: 60%;
+    }
+}
+@media screen and (max-width:1024px) {
     html {
         font-size: 50%;
+    }
+}
+@media screen and (max-width:768px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .box {
+        width: 50%;
+    }
+}
+@media screen and (max-width:430px) {
+    .box {
+        width: 100%;
     }
 }
