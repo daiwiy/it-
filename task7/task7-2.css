@@ -134,6 +134,9 @@
 
 .middle-seven {
     padding-top: 1rem;
+    position: relative;
+    left: -1rem;
+    width: 15.2rem;
     display: none;
     justify-content: space-around;
 }
