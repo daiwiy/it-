@@ -182,7 +182,9 @@ body {
 #below-six {
     width: 14rem;
 }
-
+#row4 {
+    background: #fafafa;
+}
 #level1 {
     text-align: center;
     padding-bottom: 70px;
@@ -228,7 +230,9 @@ body {
     color: #b0b0b0;
     text-align: center;
 }
-
+#row5 {
+    background: #fafafa;
+}
 #rest-one {
     height: 166px;
     display: flex;
@@ -239,11 +243,13 @@ body {
 #rest-twe {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .rest-twe-one {
     width: 20%;
-    padding-bottom: 95px;
+    margin-bottom: 95px;
+    background: #ffffff;
 }
 
 .rest-twe-1 {
@@ -268,21 +274,53 @@ body {
     padding-left: 19%;
     padding-top: 45px;
 }
+#row6 {
+    background: #ffffff;
+}
 #footer {
     height: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #footer-one {
     height: 70px;
 }
+
 #footer-twe {
     display: flex;
     justify-content: space-between;
-    padding-right:48px; 
+    padding-right: 18px;
 }
+
 #footer-three {
     height: 172px;
     display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    
+}
+
+#footer-four {
+    width: 224px;
+}
+
+#footer-five {
+    width: 243px;
+}
+
+#footer-six {
+    padding-top: 38px;
+    padding-left:100px;
+    
+}
+#footer-seven {
+    height: 30px;
+    text-align: center;
+}
+#row7 {
+    background: #26a26f;
+    color: #ffffff;
+    
 }
