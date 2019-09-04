@@ -180,8 +180,7 @@ body {
     color: #ffffff;
 }
 
-#middle {
-    height: 2937px;
+#row2 {
     background: #fafafa;
 }
 
@@ -191,20 +190,18 @@ body {
     border-bottom: 1px solid #d0d6d9;
     display: flex;
     align-items: center;
-    margin-bottom: 47px;
 }
-
-#middle-all {
-    display: flex;
-    justify-content: space-between;
+#box {
+    padding: 0 10px 0 10px;
+    margin-top: 47px;
 }
-
 #middle-twe {
     height: 450px;
-    width: 31%;
+    width: auto;
     background: #ffffff;
     padding: 20px 0 15px 0;
     border: 1px solid #eeeded;
+    
 }
 
 #middle-twe-1 {
@@ -216,7 +213,7 @@ body {
     height: 139px;
     padding-left: 8px;
     padding-top: 15px;
-    width: 100%;
+    min-width: 85px;
 }
 
 #middle-twe-3 {
@@ -224,6 +221,8 @@ body {
     padding-top: 15px;
     white-space: normal;
     word-break: break-all;
+    height: 100px;
+    overflow: hidden;
 }
 
 #middle-three {
@@ -287,73 +286,44 @@ body {
     align-items: center;
 }
 
-#middle-five {
-    height: 80px;
-    font-size: 1.4rem;
-    border-bottom: 1px solid #d0d6d9;
-    display: flex;
-    align-items: center;
-    margin-bottom: 47px;
-}
-
-#middle-all-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#main-twe {
-    height: 450px;
-    width: 31%;
-    background: #ffffff;
-    padding: 20px 0 15px 0;
-    border: 1px solid #eeeded;
-    margin-bottom: 45px;
-}
-
-#middle-five-2 {
-    display: flex;
-    justify-content: space-around;
-}
-
-#middle-six {
-    height: 80px;
-    font-size: 1.4rem;
-    border-bottom: 1px solid #d0d6d9;
-    display: flex;
-    align-items: center;
-    margin-bottom: 47px;
+#row7 {
+    background: #29b078;
+    color: #ffffff;
 }
 
 #footer {
-    height: 200px;
-    background: #29b078;
-}
-
-#footer-all {
-    display: flex;
-    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #footer-one {
-    height: 175px;
-    width: 224px;
+    color: #ffffff;
+    padding-top: 20px;
 }
 
 #footer-one-1 {
-    padding-top: 40px;
+    font-size: 1.6rem;
 }
 
-#footer-one-2 {
-    padding-top: 65px;
-}
-
-#footer-twe {
-    padding-top: 40px;
-    height: 25px;
-    width: 243px;
-}
+#footer-twe {}
 
 #footer-three {
-    display: 
+    text-align: center;
+}
+
+#footer-three-text {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1710px) {
+    #middle-twe-3 {
+        font-size: 30%;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    #middle-twe-2 {
+        font-size: 20%;
+    }
 }
