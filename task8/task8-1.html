@@ -13,368 +13,453 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row" id="header">
+    <div class="container-fluid" id="header">
+        <div class="row" id="header-row-first">
             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2
-            col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" id="header-one">
-                客服电话：010-594-78634
-                <div id="header-twe">
-                    <img class="header-photo" src="./qq.png" alt="">
-                    <img class="header-photo" src="./wx.png" alt="">
-                    <img class="header-photo" src="./wb.png" alt="">
+             col-sm-10 col-sm-offset-1 col-xs-12 " id="header-first">
+                <div id="header-first-text">
+                    客服电话：010-5947863
+                </div>
+                <div id="header-first-icon">
+                    <img src="./qq.png" alt="first-icon">
+                    <img src="./wx.png" alt="second-icon">
+                    <img src="./wb.png" alt="third-icon">
                 </div>
             </div>
         </div>
-        <div class="row" id="header-three">
-            <div id="header-three-one" class="col-lg-8 col-lg-offset-2 
-            col-md-12 col-sm-12  col-xs-12">
+        <div class="row" id="header-row-second">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" id="header-second">
                 <a href="./task8-1.html">
-                    <button id="header-three-twe">
+                    <button id="header-second-button-one">
                         关于
                     </button>
                 </a>
+
                 <a href="./task8-3.html">
-                    <button id="header-three-three">
+                    <button id="header-second-button-twe">
                         推荐
                     </button>
                 </a>
                 <a href="./task8-2.html">
-                    <button id="header-three-four">
+                    <button id="header-second-button-three">
                         职业
                     </button>
                 </a>
+
                 <a href="./task8-1.html">
-                    <button id="header-three-five">
+                    <button id="header-second-button-four">
                         首页
                     </button>
                 </a>
             </div>
+            <div class="header-third">
+                <button class="header-third-one"><img src="./heengxian.png" alt=""></button>
+                <div class="header-third-twe">
+                    <a href="./task8-1.html">
+                        <button class="col-xs-12" id="header-third-button">
+                            首页
+                        </button>
+                    </a>
+                    <a href="./task8-2.html">
+                        <button class="col-xs-12" id="header-third-button">
+                            职业
+                        </button>
+                    </a>
+                    <a href="./task8-3.html">
+                        <button class="col-xs-12" id="header-third-button">
+                            推荐
+                        </button>
+                    </a>
+                    <a href="./task8-1.html">
+                        <button class="col-xs-12" id="header-third-button">
+                            关于
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="Carousel-one" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#Carousel-one" data-slide-to="0" class="active"></li>
-            <li data-target="#Carousel-one" data-slide-to="1"></li>
-            <li data-target="#Carousel-one" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
+    <div id="carousel-first" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#carousel-first" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-first" data-slide-to="1"></li>
+            <li data-target="#carousel-first" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img id="carousel-one-photo" src="./photo.png" alt="First slide">
+                <img id="caroousel-first-photo" src="./photo.png" alt="">
             </div>
             <div class="item">
-                <img id="carousel-one-photo" src="./photo.png" alt="Second slide">
+                <img id="caroousel-first-photo" src="./photo.png" alt="">
             </div>
             <div class="item">
-                <img id="carousel-one-photo" src="./photo.png" alt="Third slide">
+                <img id="caroousel-first-photo" src="./photo.png" alt="">
             </div>
         </div>
-
-        <a class="left carousel-control" href="#Carousel-one" role="button" data-slide="prev">
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#Carousel-one" role="button" data-slide="next">
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="container-fluid" style="background: #fafafa;">
-        <div  class="row"id="middle">
-            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 " id="middle-one">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="middle-twe">
+    <div class="container-fluid" id="middle">
+        <div class="row" id="middle-row-first">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2" id="middle-first">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-first-one">
                     <img src="./rocket.png" alt="">
-                    <p id="middle-three">高效</p>
-                    <p id="ad1">将5到7的成长时间，缩短到1到3年</p>
+                    <p class="middle-first-text-1">高效</p>
+                    <p class="middle-first-text-2">将五到七年的成长时间，缩短到一年到三年</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="middle-twe">
+                <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-first-twe">
                     <img src="./archive.png" alt="">
-                    <p id="middle-three">规范</p>
-                    <p id="ad2">标准的实战路程，不会走弯路</p>
+                    <p class="middle-first-text-1">规范</p>
+                    <p class="middle-first-text-2">标准的实战教程，不会走弯路</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"id="middle-twe">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-first-three">
                     <img src="./Shape253.png" alt="">
-                    <p id="middle-three">人脉</p>
-                    <p id="ad3">同班好友，同院好友，技术大师，入学就是入职业脉圈，为以后铺平道路</p>
+                    <p class="middle-first-text-1">人脉</p>
+                    <p class="middle-first-text-3">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</p>
                 </div>
-                <div class="col-lg-6 col-md-3 col-sm-3 col-xs-12" id="middle-five">
-                    <p>
-                        <img src="./renxiang.png" alt="">
-                        <span id="middle-six"> 12400</span>
-                    </p>
-                    <p id="dl4">累计在线学习人数</p>
-                    <p>
-                        <img src="./renxiang.png" alt="">
-                        <span id="middle-six"> 12400</span>
-                    </p>
-                    <p id="dl4">学员已找到满意工作</p>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-first-four">
+                    <p class="middle-first-four-1"><img src="./renxiang.png" alt="">12400</p>
+                    <p class="middle-first-four-2">累计在线学习人数</p>
+                    <p class="middle-first-four-3"><img src="./renxiang.png" alt="">12400</p>
+                    <p class="middle-first-four-2">学员已经找到满意工作</p>
                 </div>
             </div>
         </div>
-        <div class="row" id="below">
-            <div class="col-lg-8 col-lg-offset-2
-            col-md-12 col-sm-12 col-xs-12" id="below-one">
-                <div class="col-lg-2 col-lg-offset-5" id="below-twe">
-                    <span>如何学习</span>
+        <div class="row" id="middle-row-second">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 " id="middle-second">
+                <div id="middle-second-one">
+                    如何学习
                 </div>
-                <div class="col-lg-12" id="below-all">
-                    <img id="below-three" src="./1.png" alt="">
-                    <p id="below-four">匹配你现在的个人人情况，寻找适合自己的岗位</p>
-                    <div id="below-five"><img src="./jt.png" alt=""></div>
-                    <img id="below-three" src="./2.png" alt="">
-                    <p id="below-four">了解职业前景薪金待遇，竞争压力等</p>
-                    <div id="below-five"><img src="./jt.png" alt=""></div>
-                    <img id="below-three" src="./3.png" alt="">
-                    <p id="below-six">掌握行业内顶级技能</p>
-                    <div id="below-five"><img src="./jt.png" alt=""></div>
-                    <img id="below-three" src="./3.png" alt="">
-                    <p id="below-six">查看职业目标任务</p>
+                <div id="middle-second-twe">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
+                        <div class="middle-second-twe-photo-1"><img src="./1.png" alt=""></div>
+                        <div class="middle-second-text">匹配你现在的个人情况寻找适合自己的岗位</div>
+                        <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
+                        <div class="middle-second-twe-photo-1"><img src="./2.png" alt=""></div>
+                        <div class="middle-second-text">了解职业前景薪金待遇、竞争压力等</div>
+                        <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
+                        <div class="middle-second-twe-photo-1"><img src="./3.png" alt=""></div>
+                        <div class="middle-second-text">掌握行业内顶级技能</div>
+                        <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
+                        <div class="middle-second-twe-photo-1"><img src="./4.png" alt=""></div>
+                        <div class="middle-second-text">查看职业目标任务</div>
+                        <div class="middle-second-twe-photo-3"><img src="./jt.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-12" id="below-all">
-                    <img id="below-three" src="./5.png" alt="">
-                    <p id="below-four">参考学习资源，掌握技能点，逐个完成任务</p>
-                    <div id="below-five"><img src="./jt.png" alt=""></div>
-                    <img id="below-three" src="./6.png" alt="">
-                    <p id="below-four">加入班级，和小伙伴们互帮互助，一块学习</p>
-                    <div id="below-five"><img src="./jt.png" alt=""></div>
-                    <img id="below-three" src="./7.png" alt="">
-                    <p id="below-six">选择导师，一路引导，加速自己成长</p>
-                    <div id="below-five"><img src="./jt.png" alt=""></div>
-                    <img id="below-three" src="./8.png" alt="">
-                    <p id="below-six">完成职业技能升级业界大牛</p>
+                <div id="middle-second-twe">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
+                        <div class="middle-second-twe-photo-1"><img src="./5.png" alt=""></div>
+                        <div class="middle-second-text">匹配你现在的个人情况寻找适合自己的岗位</div>
+                        <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
+                        <div class="middle-second-twe-photo-1"><img src="./6.png" alt=""></div>
+                        <div class="middle-second-text">了解职业前景薪金待遇、竞争压力等</div>
+                        <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
+                        <div class="middle-second-twe-photo-1"><img src="./7.png" alt=""></div>
+                        <div class="middle-second-text">掌握行业内顶级技能</div>
+                        <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
+                        <div class="middle-second-twe-photo-1"><img src="./8.png" alt=""></div>
+                        <div class="middle-second-text">查看职业目标任务</div>
+                        <div class="middle-second-twe-photo-3"><img src="./jt.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="row" id="middle-row-third">
+            <div class="col-lg-8 col-lg-offset-2" id="middle-third">
+                <div class="middle-third-one">
+                    优秀学员
+                </div>
+                <div id="carousel-second" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li id="s" data-target="#carousel-second" data-slide-to="0" class="active"></li>
+                        <li id="ss" data-target="#carousel-second" data-slide-to="1"></li>
+                        <li id="sss" data-target="#carousel-second" data-slide-to="2"></li>
+                        <li id="ssss" data-target="#carousel-second" data-slide-to="3"></li>
+                    </ul>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pia.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 " id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pib.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pic.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pid.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pia.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pib.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pic.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pid.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pia.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pib.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pic.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pid.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pia.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pib.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pic.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="box">
+                                <div id="carousel-second-box">
+                                    <img src="./pid.png" alt="">
+                                    <h4>技术顾问：罗大佑</h4>
+                                    <p>百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="main-row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12" id="main">
+                <div id="main-first">
+                    战略合作
+                </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-12" id="main-second">
+                <div class="col-sm-12" id="main-second-one">
+                    <img id="main-second-twe" src="./v1.png" alt="">
+                </div>
+                <div class="col-sm-12" id="main-second-one">
+                    <img id="main-second-twe" src="./v2.png" alt="">
+                </div>
+                <div class="col-sm-12" id="main-second-one">
+                    <img id="main-second-twe" src="./v3.png" alt="">
+                </div>
+                <div class="col-sm-12" id="main-second-one">
+                    <img id="main-second-twe" src="./v4.png" alt="">
+                </div>
+                <div class="col-sm-12" id="main-second-one">
+                    <img id="main-second-twe" src="./v5.png" alt="">
+                </div>
 
-        <div class="row" id="row4">
-            <div class="col-md-2 col-md-offset-5" id="level1">
-                优秀学员展示
-            </div>
-            <div id="Carousel-twe" class="col-lg-8 col-lg-offset-2 col-md-12 " class="carousel slide"
-                data-ride="carousel">
-                <ol class="carousel-indicators" id="Carousel-row3-ol">
-                    <li data-target="#Carousel-twe" data-slide-to="0" class="active"></li>
-                    <li data-target="#Carousel-twe" data-slide-to="1"></li>
-                    <li data-target="#Carousel-twe" data-slide-to="2"></li>
-                    <li data-target="#Carousel-twe" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <div class="bt-wrap">
-                            <div class="col-sm-12" id="level2">
-                                <img class="level2-photo" src="./pia.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div class="col-sm-12" id="level2">
-                                <img class="level2-photo" src="./pib.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div class="col-sm-12" id="level2">
-                                <img class="level2-photo" src="./pic.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div class="col-sm-12" id="level2">
-                                <img class="level2-photo" src="./pid.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="bt-wrap">
-                            <div class="col-sm-12" id="level2">
-                                <img class="level2-photo" src="./pia.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div id="level2">
-                                <img class="level2-photo" src="./pib.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div id="level2">
-                                <img class="level2-photo" src="./pic.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div id="level2">
-                                <img class="level2-photo" src="./pid.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="bt-wrap">
-                            <div class="col-sm-12" id="level2">
-                                <img class="level2-photo" src="./pia.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div id="level2">
-                                <img class="level2-photo" src="./pib.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div id="level2">
-                                <img class="level2-photo" src="./pic.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div id="level2">
-                                <img class="level2-photo" src="./pid.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="bt-wrap">
-                            <div class="col-sm-12" id="level2">
-                                <img class="level2-photo" src="./pia.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div id="level2">
-                                <img class="level2-photo" src="./pib.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div id="level2">
-                                <img class="level2-photo" src="./pic.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                            <div id="level2">
-                                <img class="level2-photo" src="./pid.png">
-                                <h4 class="level2-text-1">技术顾问：罗大佑</h4>
-                                <p class="level-text-2">
-                                    百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-
-        <div class="row" id="row5">
-            <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
-                <div class="col-lg-2 col-lg-offset-5" id="rest-one">
-                    <div>战略合作企业</div>
-                </div>
-                <div class="col-md-12 " id="rest-twe">
-                    <div class="rest-twe-one"><img class="rest-twe-1" src="./v1.png" alt=""></div>
-                    <div class="rest-twe-one"><img class="rest-twe-2" src="./v2.png" alt=""></div>
-                    <div class="rest-twe-one"><img class="rest-twe-3" src="./v4.png" alt=""></div>
-                    <div class="rest-twe-one"><img class="rest-twe-4" src="./v3.png" alt=""></div>
-                    <div class="rest-twe-one"><img class="rest-twe-5" src="./v5.png" alt=""></div>
-                </div>
-            </div>
-        </div>
-        <div class="row" id="row6">
-            <div class="col-lg-2 col-lg-offset-5" id="footer">
+    </div>
+    <div class="container-fluid" id="footer">
+        <div class="row" id="fouter-row">
+            <div class="col-lg-8 col-lg-offset-2" id="footer-first-one">
                 友情链接
             </div>
-            <div class="col-lg-4 col-lg-offset-2
-            col-md-5 col-md-offset-1
-             col-sm-5 col-sm-offset-1 col-xs-6" id="footer-one">
-                <ul id="footer-twe">
-                    <li>手机软件</li>
-                    <li>教师招聘</li>
-                    <li>找工作</li>
-                    <li>教师招聘</li>
-                    <li>找工作</li>
-                </ul>
-                <ul id="footer-twe">
-                    <li>手机软件</li>
-                    <li>教师招聘</li>
-                    <li>找工作</li>
-                    <li>教师招聘</li>
-                    <li>找工作</li>
+            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-12" id="footer-first-twe">
+                <ul id="footer-link">
+                    <a href="./task8-1.html">
+                        <li id="footer-1">手机软件</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">教师招聘</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">找工作</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">教师招聘</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">找工作</li>
+                    </a>
                 </ul>
             </div>
-            <div class="col-lg-4
-            col-md-5 col-sm-5  col-xs-6 " id="footer-one">
-                <ul id="footer-twe">
-                    <li>手机软件</li>
-                    <li>教师招聘</li>
-                    <li>找工作</li>
-                    <li>教师招聘</li>
-                    <li>找工作</li>
+            <div class="col-lg-4 col-md-5 col-sm-12" id="footer-first-twe">
+                <ul id="footer-link">
+                    <a href="./task8-1.html">
+                        <li id="footer-1">手机软件</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">教师招聘</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">找工作</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">教师招聘</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">找工作</li>
+                    </a>
                 </ul>
-                <ul id="footer-twe">
-                    <li>手机软件</li>
-                    <li>教师招聘</li>
-                    <li>找工作</li>
-                    <li>教师招聘</li>
-                    <li>找工作</li>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-12" id="footer-first-twe">
+                <ul id="footer-link">
+                    <a href="./task8-1.html">
+                        <li id="footer-1">手机软件</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">教师招聘</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">找工作</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">教师招聘</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">找工作</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-12" id="footer-first-twe">
+                <ul id="footer-link">
+                    <a href="./task8-1.html">
+                        <li id="footer-1">手机软件</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">教师招聘</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">找工作</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">教师招聘</li>
+                    </a>
+                    <a href="./task8-1.html">
+                        <li id="footer-1">找工作</li>
+                    </a>
                 </ul>
             </div>
         </div>
-        <div class="row" id="row7">
-            <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-12" id="footer-three">
-                <div class="col-md-3 col-sm-12 col-xs-12" id="footer-three-one">
-                    <p id="footer-three-h1">技能树-改变你我</p>
-                    <p style="visibility:hidden;">金额是</p>
-                    <p id="footer-three-one-1">
-                        <a id="footer-three-text" href="./task8-1.html">关于我们</a>
+        <div class="row" id="footer-row-second">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12" id="footer-second">
+                <div class="col-lg-3 col-md-3 col-sm-12" id="footer-second-one">
+                    <p>技能树-改变你我</p>
+                    <p style="visibility: hidden">金额数</p>
+                    <p>
+                        <a id="footer-f1" href="./task8-1.html">关于我们</a>
                         |
-                        <a id="footer-three-text" href="./task8-1.html">联系我们</a>
+                        <a id="footer-f1" href="./task8-1.html">联系我们</a>
                         |
-                        <a id="footer-three-text" href="./task8-1.html">合作企业</a>
+                        <a id="footer-f1" href="./task8-1.html">合作企业</a>
                     </p>
                 </div>
-                <div class="col-md-3 col-sm-12 col-xs-12" id="footer-three-one">
-                    <p id="footer-three-h1">旗下网站</p>
+                <div class="col-lg-3 col-md-3 col-sm-12" id="footer-second-one">
+                    <p>旗下网站</p>
                     <p>
-                        <a id="footer-three-text" href="./task8-1.html">草船云孵化器</a>
-                        <a id="footer-three-text" href="./task8-1.html">最强it培训营</a>
+                        <a id="footer-f1" href="./task8-1.html">草船云孵化器</a>
+                        <a id="footer-f1" href="./task8-1.html">最强it特训营</a>
                     </p>
                     <p>
-                        <a id="footer-three-text" href="./task8-1.html">葡萄藤轻游戏</a>
-                        <a id="footer-three-text" href="./task8-1.html">桌游精灵</a>
+                        <a id="footer-f1" href="./task8-1.html">葡萄藤轻游戏</a>
+                        <a id="footer-f1" href="./task8-1.html">桌游精灵</a>
                     </p>
                 </div>
-                <div class="col-md-2 col-md-offset-4" id="footer-three-twe">
-                    <p>微信平台公众号</p>
+                <div class="col-lg-2 col-lg-offset-4 col-md-2 col-md-offset-4" id="footer-second-twe">
+                    <p>微信公众平台</p>
                     <img src="./2weima.png" alt="">
                 </div>
             </div>
-            <div class="col-md-12" id="footer-three-three">
-                Copyright©2015技能树www.jnshu.comAllRightsReserved京ICP
+            <div class="col-lg-12 col-xs-12" id="footer-third">
+                Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号
             </div>
         </div>
     </div>

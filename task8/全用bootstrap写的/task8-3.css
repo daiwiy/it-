@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    background: #fafafa;
+}
+
+#header {
+    height: 140px;
+}
+
+#row1 {
+    background: #ffffff;
+}
+
+#header-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 1.4rem;
+    height: 40px;
+}
+
+#row2 {
+    background: #29b078;
+    height: 100px;
+}
+
+#header-twe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    height: 100px;
+}
+
+#header-twe-anniu1 {
+    background: #29b078;
+    height: 100px;
+    width: 10rem;
+    border: none;
+    color: #ffffff;
+}
+
+#header-twe-anniu2 {
+    background: #29b078;
+    height: 100px;
+    width: 10rem;
+    color: #ffffff;
+    border: none;
+}
+
+#header-twe-anniu3 {
+    background: #29b078;
+    height: 100px;
+    width: 10rem;
+    color: #ffffff;
+    border: none;
+}
+
+#header-twe-anniu4 {
+    background: #29b078;
+    height: 100px;
+    width: 10rem;
+    margin-right: -50px;
+    border: none;
+    color: #ffffff;
+}
+
+#header-twe-anniu1:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+#header-twe-anniu2:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+#header-twe-anniu3:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+#header-twe-anniu4:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+#carousel-row3 {
+    height: 270px;
+}
+
+#carousel-row3-photo {
+    height: 270px;
+    width: 100%;
+}
+
+#row3 {
+    background: #fafafa;
+}
+
+#middle-one {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#middle-twe {
+    background: #ffffff;
+    text-align: center;
+    height: 700px;
+    padding-top: 20px;
+}
+
+#dl2 {
+    color: #29b078;
+    font-size: 1.2rem;
+    padding: 20px 0 20px 0;
+    list-style: none;
+}
+
+#dl3 {
+    color: #29b078;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 20px 0 20px 0;
+}
+
+#dl4 {
+    color: #29b078;
+    font-size: 1.2rem;
+    padding: 20px 0 20px 0;
+    list-style: none;
+}
+
+#dl5 {
+    color: #29b078;
+    font-size: 1.2rem;
+    padding: 20px 0 20px 0;
+    list-style: none;
+}
+
+#dl6 {
+    color: #29b078;
+    font-size: 1.2rem;
+    padding: 20px 0 20px 0;
+    list-style: none;
+}
+
+#dl7 {
+    color: #29b078;
+    font-size: 1.2rem;
+    padding: 20px 0 20px 0;
+    list-style: none;
+}
+
+#dl8 {
+    list-style: none;
+    color: #29b078;
+    font-size: 1.2rem;
+    padding: 20px 0 20px 0;
+}
+
+#dl2:hover {
+    color: #f9a372;
+}
+
+#dl3：hover {
+    color: #f9a372;
+}
+
+#dl4:hover {
+    color: #f9a372;
+}
+
+#dl5:hover {
+    color: #f9a372;
+}
+
+#dl6:hover {
+    color: #f9a372;
+}
+
+#dl7:hover {
+    color: #f9a372;
+}
+
+#dl8:hover {
+    color: #f9a372;
+}
+
+#middle-three {
+    margin-bottom:230px; 
+}
+
+#middle-three-1 {
+    margin-left: 35px;
+    height: auto;
+    background: #ffffff;
+    padding: 20px 65px 0 85px;
+    border-bottom: 1px solid #e6e6e6;
+}
+#middle-three-3 {
+    float: left;
+}
+#middle-three-4 {
+    font-size: 1.4rem;
+    color: #999999;
+}
+
+#middle-four {
+    padding: 40px 70px 100px 64px;
+    margin-left: 35px;
+    background: #ffffff;
+    font-size: 1.4rem;
+    color: #999999;
+}
+
+#middle-four-1 {
+    padding-bottom: 30px;
+}
+
+#row7 {
+    background: #29b078;
+    color: #ffffff;
+}
+
+#footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer-one {
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+#footer-one-1 {
+    font-size: 1.6rem;
+}
+
+#footer-three {
+    text-align: center;
+}
+
+#footer-three-text {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+    #header-twe-anniu4 {
+       margin-right:0 ;
+    }
+}
+@media screen and (max-width: 610px) {
+    #header-twe-anniu1 {
+       width: 50px;
+    }
+}
+@media screen and (max-width: 610px) {
+    #header-twe-anniu2 {
+       width: 50px;
+    }
+}
+@media screen and (max-width: 610px) {
+    #header-twe-anniu3 {
+       width: 50px;
+    }
+}
+@media screen and (max-width: 610px) {
+    #header-twe-anniu4 {
+       width: 50px;
+    }
+}
+@media screen and (max-width: 1340px) {
+    #middle-three-4 {
+       font-size: 30%
+    }
+}
+@media screen and (max-width: 1340px) {
+    #middle-four {
+       font-size: 30%
+    }
+}
+@media screen and (max-width: 500px) {
+    #middle-four {
+     padding:40px 30px 100px  30px;
+    }
+}
+@media screen and (max-width: 992px) {
+    #middle-twe {
+       margin-bottom:50px;
+    
+    }
+}
+@media screen and (max-width: 992px) {
+     #middle-four {
+      margin: 0;
+    
+    }
+}
+@media screen and (max-width: 992px) {
+    #middle-three-1 {
+     margin: 0;
+   
+   }
+}
+
