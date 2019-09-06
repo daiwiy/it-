@@ -89,50 +89,40 @@ body {
     border-bottom: 4px solid #ffffff;
 }
 
-.header-third-one {
-    background-color: #29b078;
-    padding: 16px;
-    border: none;
-    cursor: pointer;
-}
-
 .header-third {
+    text-align: right;
     position: relative;
     display: inline-block;
-}
-.header-third-twe {
-    display: block;
-    position: absolute;
-    background-color: #29b078;
-    min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    
+    width: 100%;
 }
 
-.header-third-twea {
-    color: #ffffff;
-    padding: 12px 16px;
-    text-decoration: none;
+.header-third-content {
     display: none;
+    background-color: #29b078;
+    text-align: center;
     z-index: 1;
 }
 
+.header-third-photo {
+    color: #ffffff;
+    width: 100%;
+    background-color: #29b078;
+    border: none;
+    height: 30px;
+}
 
-/* 在鼠标移上去后显示下拉菜单 */
-.header-third:hover .header-third-twe {
+.header-third:hover .header-third-content {
     display: block;
 }
 
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #header-second {
         display: none;
     }
 }
 
 @media screen and (min-width: 768px) {
-    #header-third {
+    .header-third {
         display: none;
     }
 }
