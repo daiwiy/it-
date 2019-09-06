@@ -197,14 +197,33 @@ body {
 
 .middle-first-text-2 {
     margin-top: 35px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #a1a1a1;
     max-width: 224px;
 }
 
 .middle-first-text-3 {
+    margin-top: 49px;
+    font-size: 1.8rem;
+    color: #333333;
+}
+
+.middle-first-text-4 {
     margin-top: 35px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    color: #a1a1a1;
+    max-width: 224px;
+}
+
+.middle-first-text-5 {
+    margin-top: 35px;
+    font-size: 1.8rem;
+    color: #333333;
+}
+
+.middle-first-text-6 {
+    margin-top: 40px;
+    font-size: 1.6rem;
     color: #a1a1a1;
     max-width: 254px;
 }
@@ -225,26 +244,38 @@ body {
 
 #middle-first-four {
     display: flex;
-    justify-items: center;
-    flex-direction: column;
-    align-items: center;
-    border-left: 1px dashed #dedede;
+    justify-content: center;
+    align-items: left;
     font-size: 1.8rem;
 }
 
+#middle-first-four-photo {
+    padding-right: 30px;
+}
+
 .middle-first-four-1 {
-    padding-top: 65px;
+    padding-top: 55px;
     color: #29b078;
+    margin: 0;
 }
 
 .middle-first-four-2 {
-    margin-top: 17px;
+    margin-top: 10px;
     color: #a1a1a1;
+    font-size: 1.8rem;
+    min-width: 150px;
 }
 
 .middle-first-four-3 {
-    margin-top: 20px;
+    margin-top: 50px;
     color: #29b078;
+}
+
+.middle-first-four-4 {
+    margin-top: 10px;
+    color: #a1a1a1;
+    font-size: 1.8rem;
+    min-width: 180px;
 }
 
 #middle-row-second {
@@ -252,7 +283,7 @@ body {
 }
 
 #middle-second {
-    padding-top: 80px;
+    padding: 80px 0 0 0 ;
 }
 
 #middle-second-one {
@@ -267,6 +298,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    padding:0 12px 0 12px ;
 }
 
 .middle-second-text {
@@ -296,7 +328,9 @@ body {
 #middle-row-third {
     background: #fafafa;
 }
-
+#middle-third {
+    padding: 0;
+}
 .middle-third-one {
     font-size: 1.8rem;
     text-align: center;
@@ -380,13 +414,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 65px;
+    font-size: 1.8rem;
 }
 
 #footer-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 45px;
 }
 
 #footer-1 {
