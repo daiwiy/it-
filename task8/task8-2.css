@@ -224,11 +224,11 @@ body {
     height: 80px;
     display: flex;
     align-items: center;
-    padding: 0;
 }
 
 #middle-row {
     background: #fafafa;
+    margin-bottom:240px; 
 }
 
 #middle-first {
@@ -344,15 +344,15 @@ body {
 }
 
 .major-animation {
-    display: block;
     position: absolute;
-    bottom: 0;
-    height: 100px;
-    width: 100px;
+    bottom: 50%;
+    display: none;
+    height: 25px;
     background-color: rgba(51, 51, 51, 0.5);
     margin: 0 auto;
     color: #ffffff;
     z-index: 1;
+    animation: myfirst 5s;
 }
 
 .major-animation-one {
@@ -367,6 +367,29 @@ body {
 #major-all:hover .major-animation {
     display: block;
     height: 455px;
-    width: 100%;
+    bottom: 0;
+    width: auto;
+    transition: width 2s, height 2s, transform 2s;
     transform: rotate(360deg);
+}
+
+#footer-row-second {
+    background: #29b078;
+}
+
+#footer-second {
+    padding: 40px 35px 35px 0;
+}
+
+#footer-second-one {
+    color: #ffffff;
+}
+
+#footer-f1 {
+    color: #ffffff;
+}
+
+#footer-third {
+    color: #ffffff;
+    text-align: center;
 }
