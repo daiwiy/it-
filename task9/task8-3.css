@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    background: #fafafa;
+}
+
+#header-row-first {
+    background: #ffffff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#header-first-text {
+    float: left;
+    color: #29b078;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    #header-first-text {
+        visibility: hidden;
+    }
+}
+
+#header-first-icon {
+    float: right;
+}
+
+#header-row-second {
+    background: #29b078;
+}
+
+#header-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    #header-second-one {
+        visibility: hidden;
+    }
+}
+
+#header-second-button-one {
+    border: none;
+    color: #ffffff;
+    height: 100px;
+    width: 100px;
+    background: #29b078;
+    float: right;
+    margin-right: -36px;
+}
+
+#header-second-button-twe {
+    border: none;
+    color: #ffffff;
+    height: 100px;
+    width: 100px;
+    background: #29b078;
+    float: right;
+}
+
+#header-second-button-three {
+    border: none;
+    color: #ffffff;
+    height: 100px;
+    width: 100px;
+    background: #29b078;
+    float: right;
+}
+
+#header-second-button-four {
+    border: none;
+    color: #ffffff;
+    height: 100px;
+    width: 100px;
+    background: #29b078;
+    float: right;
+}
+
+#header-second-button-four:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+#header-second-button-three:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+#header-second-button-twe:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+#header-second-button-one:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+.header-third {
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.header-third-content {
+    display: none;
+    background-color: #29b078;
+    text-align: center;
+    z-index: 1;
+}
+
+.header-third-photo {
+    color: #ffffff;
+    width: 100%;
+    background-color: #29b078;
+    border: none;
+    height: 30px;
+}
+
+.header-third:hover .header-third-content {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    #header-second {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-third {
+        display: none;
+    }
+}
+
+#carousel-first {
+    width: 100%;
+}
+
+#caroousel-first-photo {
+    width: 100%;
+    height: auto;
+}
+
+#subject-row {
+    background: #fafafa;
+}
+
+#subject-first-one {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#subject-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    margin-bottom: 60px;
+}
+
+#subject-third {
+    height: 65px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.subject-third-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject-third-2 {
+    font-size: 1.4rem;
+    color: #29b078;
+    width: 75px;
+    padding: 20px 0 20px 0;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-3 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-4 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-5 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-6 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-7 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-8 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-9 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-2:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-3:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-4:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-5:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-6:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-7:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-8:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-9:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+#subject-fourth-one {
+    background: #ffffff;
+    height: auto;
+    margin-left: 25px;
+    padding: 20px 65px 15px 65px;
+    border: 1px solid #e6e6e6;
+}
+
+#subject-fourth-photo {
+    float: left;
+    margin: 0 20px 0 20px;
+}
+
+#subject-fourth-text {
+    font-size: 1.4rem;
+    color: #999999;
+    min-height: 170px;
+}
+
+#subject-fourth-twe {
+    padding: 40px 65px 60px 45px;
+    background: #ffffff;
+    margin-left: 25px;
+    margin-bottom: 40px;
+    border: 1px solid #e6e6e6;
+}
+
+#subject-fourth-twe>p {
+    font-size: 1.4rem;
+    color: #999999;
+    padding-bottom: 40px;
+}
+
+#footer-row-second {
+    background: #29b078;
+}
+
+#footer-second {
+    padding: 40px 35px 35px 0;
+}
+
+#footer-second-one {
+    color: #ffffff;
+}
+#footer-second-one>p {
+    min-width: 191px;
+}
+#footer-f1 {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+#footer-f1:hover {
+    border-bottom:1px solid #ffffff; 
+}
+#footer-second-twe>p {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+#footer-second-twe>img {
+    padding-left: 5px;
+}
+
+#footer-third {
+    color: #ffffff;
+    border-top: 1px solid #32c086;
+    text-align: center;
+}

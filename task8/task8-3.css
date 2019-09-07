@@ -326,25 +326,26 @@ body {
 #footer-second-one {
     color: #ffffff;
 }
-#footer-second-one>p {
-    min-width: 191px;
-}
+
 #footer-f1 {
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
     padding-bottom: 5px;
 }
+
 #footer-f1:hover {
-    border-bottom:1px solid #ffffff; 
+    border-bottom: 1px solid #ffffff;
 }
+
 #footer-second-twe>p {
     font-size: 1.6rem;
     color: #ffffff;
 }
 
 #footer-second-twe>img {
-    padding-left: 5px;
+    width: 95px;
+    padding-left:1px; 
 }
 
 #footer-third {

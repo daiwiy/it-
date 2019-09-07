@@ -67,32 +67,6 @@ body {
     float: right;
 }
 
-#header-second-button-three {
-    border: none;
-    color: #ffffff;
-    height: 100px;
-    width: 100px;
-    background: #29b078;
-    float: right;
-}
-
-#header-second-button-four {
-    border: none;
-    color: #ffffff;
-    height: 100px;
-    width: 100px;
-    background: #29b078;
-    float: right;
-}
-
-#header-second-button-four:hover {
-    border-bottom: 4px solid #ffffff;
-}
-
-#header-second-button-three:hover {
-    border-bottom: 4px solid #ffffff;
-}
-
 #header-second-button-twe:hover {
     border-bottom: 4px solid #ffffff;
 }
@@ -163,31 +137,17 @@ body {
     margin-left: 25px;
     height: 22px;
     width: 36px;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .subject-second-b2 {
     color: black;
-    margin-left: 32px;
-}
-
-.subject-second-b3 {
-    color: black;
+    height: 22px;
     margin-left: 38px;
-}
-
-.subject-second-b4 {
-    color: black;
-    margin-left: 38px;
-}
-
-.subject-second-b5 {
-    color: black;
-    margin-left: 38px;
-}
-
-.subject-second-b6 {
-    color: black;
-    margin-left: 38px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .subject-second-b1:hover {
@@ -200,26 +160,6 @@ body {
     color: #ffffff;
 }
 
-.subject-second-b3:hover {
-    background: #29b078;
-    color: #ffffff;
-}
-
-.subject-second-b4:hover {
-    background: #29b078;
-    color: #ffffff;
-}
-
-.subject-second-b5:hover {
-    background: #29b078;
-    color: #ffffff;
-}
-
-.subject-second-b6:hover {
-    background: #29b078;
-    color: #ffffff;
-}
-
 #middle-first-one {
     height: 80px;
     display: flex;
@@ -228,7 +168,7 @@ body {
 
 #middle-row {
     background: #fafafa;
-    margin-bottom:240px; 
+    margin-bottom: 240px;
 }
 
 #middle-first {
@@ -391,16 +331,19 @@ body {
     display: inline-block;
     padding-bottom: 5px;
 }
+
 #footer-f1:hover {
-    border-bottom:1px solid #ffffff; 
+    border-bottom: 1px solid #ffffff;
 }
+
 #footer-second-twe>p {
     font-size: 1.6rem;
     color: #ffffff;
 }
 
 #footer-second-twe>img {
-    padding-left: 5px;
+    width: 95px;
+    padding-left:1px; 
 }
 
 #footer-third {
