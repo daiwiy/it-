@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>技能树首页</title>
     <link rel="stylesheet" href="./task8-1.css">
@@ -15,62 +15,32 @@
 <body>
     <div class="container-fluid" id="header">
         <div class="row" id="header-row-first">
-            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2
-             col-sm-10 col-sm-offset-1 col-xs-12 " id="header-first">
-                <div id="header-first-text">
-                    客服电话：010-5947863
-                </div>
-                <div id="header-first-icon">
-                    <img src="./qq.png" alt="first-icon">
-                    <img src="./wx.png" alt="second-icon">
-                    <img src="./wb.png" alt="third-icon">
-                </div>
-            </div>
-        </div>
-        <div class="row" id="header-row-second">
-            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1" id="header-second">
-                <a href="./task8-1.html">
-                    <button id="header-second-button-one">
-                        关于
-                    </button>
-                </a>
-
-                <a href="./task8-3.html">
-                    <button id="header-second-button-twe">
-                        推荐
-                    </button>
-                </a>
-                <a href="./task8-2.html">
-                    <button id="header-second-button-three">
-                        职业
-                    </button>
-                </a>
-
-                <a href="./task8-1.html">
-                    <button id="header-second-button-four">
-                        首页
-                    </button>
-                </a>
-            </div>
-            <div class="header-third">
-                <button><img style="background: #29b078;" src="./heengxian.png" alt=""></button>
-                <div class="header-third-content">
-                    <a href="./task8-1.html">
-                        <button class="header-third-photo">首页</button>
-                    </a>
-                    <a href="./task8-2.html">
-                        <button class="header-third-photo">职业</button>
-                    </a>
-                    <a href="./task8-3.html">
-                        <button class="header-third-photo">推荐</button>
-                    </a>
-                    <a href="./task8-1.html">
-                        <button class="header-third-photo">关于</button>
-                    </a>
-                </div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-md-12" id="header-first">
+                <a id="header-first-one" href="#">登录</a>
+                <span style="color: #29b078">|</span>
+                <a id="header-first-one" href="#">注册</a>
             </div>
         </div>
     </div>
+    <nav class="navbar navbar-default" role="navigation" id="header-nav">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="header-nav-one" class="navbar-brand" href="./task8-1.html"><img src="./www.jnshu.com.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse" id="header-nav-twe">
+            <ul class="nav navbar-nav">
+                <li id="header-nav-three-1"><a href="./task8-1.html">首页</a></li>
+                <li id="header-nav-three-1"><a href="./task8-2.html">职位</a></li>
+                <li id="header-nav-three-1"><a href="./task8-3.html">推荐</a></li>
+                <li id="header-nav-three-2"><a href="./task8-1.html">关于</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
     <div id="carousel-first" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#carousel-first" data-slide-to="0" class="active"></li>
@@ -135,22 +105,22 @@
                 </div>
                 <div id="middle-second-twe">
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
-                        <div class="middle-second-twe-photo-1"><img src="./1.png" alt=""></div>
+                        <img class="middle-second-twe-photo-1" src="./1.png" alt="">
                         <div class="middle-second-text">匹配你现在的个人情况寻找适合自己的岗位</div>
                         <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
-                        <div class="middle-second-twe-photo-1"><img src="./2.png" alt=""></div>
+                        <img class="middle-second-twe-photo-1" src="./2.png" alt="">
                         <div class="middle-second-text">了解职业前景薪金待遇、竞争压力等</div>
                         <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
-                        <div class="middle-second-twe-photo-1"><img src="./3.png" alt=""></div>
+                        <img class="middle-second-twe-photo-1" src="./3.png" alt="">
                         <div class="middle-second-text">掌握行业内顶级技能</div>
                         <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
-                        <div class="middle-second-twe-photo-1"><img src="./4.png" alt=""></div>
+                        <img class="middle-second-twe-photo-1" src="./4.png" alt="">
                         <div class="middle-second-text">查看职业目标任务</div>
                         <div class="middle-second-twe-photo-3"><img src="./jt.png" alt="">
                         </div>
@@ -158,23 +128,23 @@
                 </div>
                 <div id="middle-second-twe">
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
-                        <div class="middle-second-twe-photo-1"><img src="./5.png" alt=""></div>
-                        <div class="middle-second-text">匹配你现在的个人情况寻找适合自己的岗位</div>
+                        <img class="middle-second-twe-photo-1" src="./5.png" alt="">
+                        <div class="middle-second-text">参考学习资源，掌握技能点，逐个完成任务</div>
                         <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
-                        <div class="middle-second-twe-photo-1"><img src="./6.png" alt=""></div>
-                        <div class="middle-second-text">了解职业前景薪金待遇、竞争压力等</div>
+                        <img class="middle-second-twe-photo-1" src="./6.png" alt="">
+                        <div class="middle-second-text">加入班级，和小伙伴们互帮互助，一块学习</div>
                         <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
-                        <div class="middle-second-twe-photo-1"><img src="./7.png" alt=""></div>
-                        <div class="middle-second-text">掌握行业内顶级技能</div>
+                        <img class="middle-second-twe-photo-1" src="./7.png" alt="">
+                        <div class="middle-second-text">选择导师，一路引导，加速自己成长</div>
                         <div class="middle-second-twe-photo-2"><img src="./jt.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="middle-second-twe-1">
-                        <div class="middle-second-twe-photo-1"><img src="./8.png" alt=""></div>
-                        <div class="middle-second-text">查看职业目标任务</div>
+                        <img class="middle-second-twe-photo-1" src="./8.png" alt="">
+                        <div class="middle-second-text">完成职业技能，升级业界大牛</div>
                         <div class="middle-second-twe-photo-3"><img src="./jt.png" alt="">
                         </div>
                     </div>
@@ -189,9 +159,9 @@
                 <div id="carousel-second" class="carousel slide" data-ride="carousel">
                     <ul class="carousel-indicators">
                         <li id="s" data-target="#carousel-second" data-slide-to="0" class="active"></li>
-                        <li id="ss" data-target="#carousel-second" data-slide-to="1"></li>
-                        <li id="sss" data-target="#carousel-second" data-slide-to="2"></li>
-                        <li id="ssss" data-target="#carousel-second" data-slide-to="3"></li>
+                        <li id="s" data-target="#carousel-second" data-slide-to="1"></li>
+                        <li id="s" data-target="#carousel-second" data-slide-to="2"></li>
+                        <li id="s" data-target="#carousel-second" data-slide-to="3"></li>
                     </ul>
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
@@ -324,7 +294,7 @@
                     战略合作
                 </div>
             </div>
-            <div class="col-lg-8 col-lg-offset-2 col-md-12" id="main-second">
+            <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 " id="main-second">
                 <div class="col-sm-12" id="main-second-one">
                     <img id="main-second-twe" src="./v1.png" alt="">
                 </div>

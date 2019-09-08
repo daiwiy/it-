@@ -55,7 +55,7 @@ body {
     width: 100px;
     background: #29b078;
     float: right;
-    margin-right: -36px;
+    margin-right: -32px;
 }
 
 #header-second-button-twe {
@@ -119,6 +119,7 @@ body {
 
 #subject-first {
     height: 80px;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -137,7 +138,7 @@ body {
     margin-left: 25px;
     height: 22px;
     width: 36px;
-    text-decoration: none;
+   text-decoration: none;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -175,6 +176,10 @@ body {
     padding: 0;
 }
 
+#middle-first-one {
+    font-size: 1.6rem;
+}
+
 #major-all {
     padding: 0;
 }
@@ -186,6 +191,7 @@ body {
     height: 455px;
     color: #999999;
     display: block;
+    min-width: 312px;
 }
 
 .major-header {
@@ -206,6 +212,7 @@ body {
 
 .major-1 {
     height: 48px;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
 }
@@ -214,6 +221,14 @@ body {
     white-space: normal;
     word-break: break-all;
     font-size: 1.4rem;
+    height: 92px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1452px) {
+    .major-2 {
+        font-size: 30%;
+    }
 }
 
 .major-subject {
@@ -285,14 +300,15 @@ body {
 
 .major-animation {
     position: absolute;
-    bottom: 50%;
-    display: none;
-    height: 25px;
-    background-color: rgba(51, 51, 51, 0.5);
+    top: 48%;
+    bottom: 48%;
+    width: auto;
+    background-color: rgba(51, 51, 51, 0);
     margin: 0 auto;
     color: #ffffff;
-    z-index: 1;
-    animation: myfirst 5s;
+    z-index: -1;
+    animation: myfirst 1s;
+    font-size: 1.6rem;
 }
 
 .major-animation-one {
@@ -305,12 +321,13 @@ body {
 }
 
 #major-all:hover .major-animation {
-    display: block;
-    height: 455px;
     bottom: 0;
-    width: auto;
-    transition: width 2s, height 2s, transform 2s;
+    top: 50px;
+    background-color: 
+    rgba(51, 51, 51, 0.7);
+    transition: width 2s, height 2s, transform 1s;
     transform: rotate(360deg);
+    z-index: 2;
 }
 
 #footer-row-second {
@@ -343,11 +360,15 @@ body {
 
 #footer-second-twe>img {
     width: 95px;
-    padding-left:1px; 
+    padding-left: 1px;
 }
 
 #footer-third {
     color: #ffffff;
     border-top: 1px solid #32c086;
     text-align: center;
+}
+
+#footer-third:hover {
+    text-decoration: underline;
 }

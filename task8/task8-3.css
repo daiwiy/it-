@@ -54,7 +54,7 @@ body {
     width: 100px;
     background: #29b078;
     float: right;
-    margin-right: -36px;
+    margin-right: -32px;
 }
 
 #header-second-button-twe {
@@ -302,10 +302,10 @@ body {
 }
 
 #subject-fourth-twe {
-    padding: 40px 65px 60px 45px;
+    padding: 40px 65px 140px 45px;
     background: #ffffff;
     margin-left: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 230px;
     border: 1px solid #e6e6e6;
 }
 
