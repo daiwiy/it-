@@ -254,7 +254,7 @@ body {
 }
 
 .middle-second-text {
-    float: left;
+    text-align: left;
     font-size: 1.4rem;
 }
 
