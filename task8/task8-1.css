@@ -74,7 +74,6 @@ body {
 .header-second-twe:hover {
     border-bottom: 4px solid #ffffff;
 }
-
 #carousel-first {
     height: 600px;
     width: 100%;
@@ -222,11 +221,13 @@ body {
     text-align: center;
     font-size: 1.8rem;
 }
+
 #middle-second-twe {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
 }
+
 #middle-second-twe-1 {
     min-height: 74px;
     display: flex;

@@ -58,11 +58,13 @@ body {
     justify-content: center;
     margin-right: -36px;
 }
+
 @media screen and (max-width: 768px) {
-    .header-second-twe-1  {
+    .header-second-twe-1 {
         margin: 0;
     }
 }
+
 .header-second-twe {
     border: none;
     color: #ffffff;
