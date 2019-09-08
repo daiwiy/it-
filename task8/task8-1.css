@@ -221,6 +221,7 @@ body {
 
 #middle-row-second {
     background: #fafafa;
+   padding-bottom: 100px;
 }
 
 #middle-second {
@@ -234,9 +235,16 @@ body {
 }
 
 #middle-second-twe {
+    display: flex;
+    align-items: center;
     margin-bottom: 100px;
 }
-
+@media screen and (max-width: 1200px) {
+    #middle-second-twe {
+       display: block;
+       margin-bottom:0; 
+    }
+}
 #middle-second-twe-1 {
     min-height: 74px;
     display: flex;
