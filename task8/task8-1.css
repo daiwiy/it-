@@ -6,18 +6,29 @@
 body {
     font-size: 62.5%;
     background: #fafafa;
+    height: 100%;
 }
 
-#header-first {
+#header-row-first {
+    background: #ffffff;
     height: 40px;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    background: #ffffff;
+}
+#header-first-text {
+    float: left;
+    color: #29b078;
+    font-size: 1.4rem;
 }
 
-#header-first-one {
-    color: black;
+@media screen and (max-width: 768px) {
+    #header-first-text {
+        visibility: hidden;
+    }
+}
+
+#header-first-icon {
+    float: right;
 }
 
 #header-row-second {
@@ -223,8 +234,6 @@ body {
 }
 
 #middle-second-twe {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 100px;
 }
 
@@ -237,7 +246,7 @@ body {
 }
 
 .middle-second-text {
-    width: 154px;
+    max-width: 154px;
     font-size: 1.4rem;
 }
 
