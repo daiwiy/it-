@@ -254,7 +254,7 @@ body {
 }
 
 .middle-second-text {
-    max-width: 154px;
+    float: left;
     font-size: 1.4rem;
 }
 
