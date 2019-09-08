@@ -34,44 +34,56 @@ body {
 
 #header-row-second {
     background: #29b078;
+    height: 100px;
 }
 
-#header-second {
+#header-second-one {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 0;
+}
+
+#header-second-one>a {
+    text-decoration: none;
+}
+
+.header-second-twe-1 {
+    border: none;
+    color: #ffffff;
+    height: 100px;
+    width: 100px;
+    list-style: none;
+    background: #29b078;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-right: -36px;
 }
 
 @media screen and (max-width: 768px) {
-    #header-second-one {
-        visibility: hidden;
+    .header-second-twe-1 {
+        margin: 0;
     }
 }
 
-#header-second-button-one {
+.header-second-twe {
     border: none;
     color: #ffffff;
     height: 100px;
     width: 100px;
+    list-style: none;
+    text-decoration: none;
     background: #29b078;
-    float: right;
-    margin-right: -32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#header-second-button-twe {
-    border: none;
-    color: #ffffff;
-    height: 100px;
-    width: 100px;
-    background: #29b078;
-    float: right;
-}
-
-#header-second-button-twe:hover {
+.header-second-twe-1:hover {
     border-bottom: 4px solid #ffffff;
 }
 
-#header-second-button-one:hover {
+.header-second-twe:hover {
     border-bottom: 4px solid #ffffff;
 }
 
@@ -133,12 +145,15 @@ body {
     font-size: 1.4rem;
 }
 
+#subject-second>a {
+    text-decoration: none;
+}
+
 .subject-second-b1 {
     color: black;
     margin-left: 25px;
     height: 22px;
     width: 36px;
-   text-decoration: none;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -188,16 +203,13 @@ body {
     position: relative;
     margin: 50px 15px 0 15px;
     background: #ffffff;
-    height: 455px;
     color: #999999;
     display: block;
-    min-width: 312px;
 }
 
 .major-header {
     display: flex;
     padding: 20px 10px 15px 10px;
-    height: 175px;
     color: black;
 }
 
@@ -221,7 +233,6 @@ body {
     white-space: normal;
     word-break: break-all;
     font-size: 1.4rem;
-    height: 92px;
     overflow: hidden;
 }
 
@@ -323,8 +334,7 @@ body {
 #major-all:hover .major-animation {
     bottom: 0;
     top: 50px;
-    background-color: 
-    rgba(51, 51, 51, 0.7);
+    background-color: rgba(51, 51, 51, 0.7);
     transition: width 2s, height 2s, transform 1s;
     transform: rotate(360deg);
     z-index: 2;
@@ -340,6 +350,11 @@ body {
 
 #footer-second-one {
     color: #ffffff;
+}
+
+#footer-second-one>p {
+    height: 20px;
+    min-width: 192px;
 }
 
 #footer-f1 {
