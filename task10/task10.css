@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-size: 62.5%; */
+    height: 100%;
+}
+
+.header {
+    background: #1d7ad9;
+    color: #ffffff;
+}
+
+.header-first {
+    width: 62.5%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    font-size: 14px;
+}
+
+.header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-second {
+    background: #f9f9f9;
+    height: 100px;
+}
+
+.header-button {
+    width: 62.5%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 16px;
+}
+
+.header-button input {
+    display: none;
+}
+
+.header-button>lable {
+    height: 50px;
+    width: 100px;
+    background: #ffffff;
+    color: black;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hb1:checked ~.hl1 {
+        background: #3366cc;
+        color: #ffffff;
+}
+
+.middle-first {
+    width: 62.5%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.middle-first-box {
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.middle-first-photo {
+    position: relative;
+    border-radius: 5px;
+    width: 160px;
+    height: 5px;
+    margin-bottom: 35px;
+    background: #cccccc;
+}
+
+.middle-radius {
+    position: absolute;
+    left: 68px;
+    top: -10px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: #cccccc;
+    text-align: center;
+    color: #ffffff;
+}
+
+.middle-first-text {
+    width: 160px;
+    font-size:18px;
+    color: #cccccc;
+    text-align: center;
+}
+
+.middle-second-box {
+    width: 62.5%;
+    margin: 0 auto;
+}
+
+.middle-second-photo {
+    width: 4px;
+    height: 21px;
+    background: #1d7ad9;
+    float: left;
+}
+
+.middle-second-box>p {
+    margin-bottom: 17px;
+}
+
+.middle-second-form>lable {
+    height: 45px;
+    background: #cccccc;
+}
