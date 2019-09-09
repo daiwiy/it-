@@ -20,60 +20,97 @@ body {
     color: black;
 }
 
+nav {
+    background: #29b078;
+}
+
 #header-row-second {
-    background: #29b078;
+    display: flex;
 }
 
-#header-nav {
-    height: 100px;
-    background: #29b078;
-    border-radius: 0; 
-    padding: 0;
-    margin: 0;
-    display:flex;
-    justify-content:space-between;
-}
-#header-nav-one {
+#heaedr-second {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    position: relative;
     height: 100px;
 }
-#header-nav-twe {
-    display:flex;
+
+.heaedr-second-one {
+    width: 107px;
+    height: 49px;
+    background-size: 107px 49px;
+    background: url(./www.jnshu.com.png) no-repeat;
+    position: relative;
+    top: 35px;
+}
+
+.navs {
+    display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 0;
 }
 
-#header-nav-three-1 {
+.navs li {
+    list-style: none;
+    display: inline-block;
     height: 100px;
     width: 100px;
-    list-style: none;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
 }
 
-#header-nav-three-2 {
-    height: 100px;
-    width: 100px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: -15px;
-}
-
-#header-nav-three-1>a {
+.navs a {
+    text-decoration: none;
     color: #ffffff;
 }
 
-#header-nav-three-2>a {
+.navs-one {
+    margin-right: -20px
+}
+
+.navs li:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+.navs a:hover {
+    text-decoration: none;
     color: #ffffff;
 }
 
-@media screen and (max-width: 992px) {
-    #header-nav-three-2 {
-        margin: 0;
+#check-box {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+@media screen and (max-width: 992px) { 
+    .navs-one {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    #header-row-second {
+        display: block;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 40px;
+    }
+    .navs {
+        display: none;
+        width: 100%;
+    }
+    .navs li {
+        height: 40px;
+        width: 100%;
+    }
+    #check-box:checked ~.navs {
+        display: block;
     }
 }
 

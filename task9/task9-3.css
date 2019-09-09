@@ -8,136 +8,111 @@ body {
     background: #fafafa;
 }
 
-#header-row-first {
-    background: #ffffff;
+#header-first {
     height: 40px;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
+    background: #ffffff;
 }
 
-#header-first-text {
-    float: left;
-    color: #29b078;
-    font-size: 1.4rem;
+#header-first-one {
+    color: black;
 }
 
-@media screen and (max-width: 768px) {
-    #header-first-text {
-        visibility: hidden;
-    }
-}
-
-#header-first-icon {
-    float: right;
+nav {
+    background: #29b078;
 }
 
 #header-row-second {
-    background: #29b078;
+    display: flex;
 }
 
-#header-second {
+#heaedr-second {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-    #header-second-one {
-        visibility: hidden;
-    }
-}
-
-#header-second-button-one {
-    border: none;
-    color: #ffffff;
-    height: 100px;
-    width: 100px;
-    background: #29b078;
-    float: right;
-    margin-right: -36px;
-}
-
-#header-second-button-twe {
-    border: none;
-    color: #ffffff;
-    height: 100px;
-    width: 100px;
-    background: #29b078;
-    float: right;
-}
-
-#header-second-button-three {
-    border: none;
-    color: #ffffff;
-    height: 100px;
-    width: 100px;
-    background: #29b078;
-    float: right;
-}
-
-#header-second-button-four {
-    border: none;
-    color: #ffffff;
-    height: 100px;
-    width: 100px;
-    background: #29b078;
-    float: right;
-}
-
-#header-second-button-four:hover {
-    border-bottom: 4px solid #ffffff;
-}
-
-#header-second-button-three:hover {
-    border-bottom: 4px solid #ffffff;
-}
-
-#header-second-button-twe:hover {
-    border-bottom: 4px solid #ffffff;
-}
-
-#header-second-button-one:hover {
-    border-bottom: 4px solid #ffffff;
-}
-
-.header-third {
-    text-align: right;
     position: relative;
+    height: 100px;
+}
+
+.heaedr-second-one {
+    width: 107px;
+    height: 49px;
+    background-size: 107px 49px;
+    background: url(./www.jnshu.com.png) no-repeat;
+    position: relative;
+    top: 35px;
+}
+
+.navs {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+}
+
+.navs li {
+    list-style: none;
     display: inline-block;
-    width: 100%;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.header-third-content {
-    display: none;
-    background-color: #29b078;
-    text-align: center;
-    z-index: 1;
-}
-
-.header-third-photo {
+.navs a {
+    text-decoration: none;
     color: #ffffff;
-    width: 100%;
-    background-color: #29b078;
-    border: none;
-    height: 30px;
 }
 
-.header-third:hover .header-third-content {
-    display: block;
+.navs-one {
+    margin-right: -20px
 }
 
-@media screen and (max-width: 767px) {
-    #header-second {
-        display: none;
+.navs li:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+.navs a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#check-box {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+@media screen and (max-width: 992px) { 
+    .navs-one {
+        margin-right: 0;
     }
 }
-
-@media screen and (min-width: 768px) {
-    .header-third {
+@media screen and (max-width: 768px) {
+    #header-row-second {
+        display: block;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 40px;
+    }
+    .navs {
         display: none;
+        width: 100%;
+    }
+    .navs li {
+        height: 40px;
+        width: 100%;
+    }
+    #check-box:checked ~.navs {
+        display: block;
     }
 }
-
 #carousel-first {
     width: 100%;
 }
