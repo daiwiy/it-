@@ -284,7 +284,7 @@ body {
 }
 
 .major-7 {
-    width: 1000%;
+    width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
@@ -294,7 +294,7 @@ body {
 }
 
 .major-8 {
-    width: 1000%;
+    width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
