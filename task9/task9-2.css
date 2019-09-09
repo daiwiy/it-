@@ -8,7 +8,30 @@ body {
     background: #fafafa;
 }
 
-#header-first {
+#header-row-first {
+    background: #ffffff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#header-first-text {
+    float: left;
+    color: #29b078;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    #header-first-one {
+        display: none;
+    }
+}
+
+#header-first-icon {
+    float: right;
+}
+
+#header-first-twe {
     height: 40px;
     display: flex;
     flex-direction: row-reverse;
@@ -16,10 +39,14 @@ body {
     background: #ffffff;
 }
 
-#header-first-one {
+#header-first-1 {
     color: black;
 }
-
+@media screen and (min-width: 769px) {
+    #header-first-twe {
+        display: none;
+    }
+}
 nav {
     background: #29b078;
 }
@@ -86,11 +113,13 @@ nav {
 .menu {
     display: none;
 }
-@media screen and (max-width: 992px) { 
+
+@media screen and (max-width: 992px) {
     .navs-one {
         margin-right: 0;
     }
 }
+
 @media screen and (max-width: 768px) {
     #header-row-second {
         display: block;
@@ -106,13 +135,22 @@ nav {
         width: 100%;
     }
     .navs li {
-        height: 40px;
+        height: 50px;
         width: 100%;
     }
-    #check-box:checked ~.navs {
+    .navs li:hover {
+        background: #00ff00;
+        border: none;
+    }
+    #check-box:checked~.navs {
         display: block;
     }
 }
+#carousel-first {
+    height: 600px;
+    width: 100%;
+}
+
 #subject {
     background: #fafafa;
 }
@@ -133,12 +171,15 @@ nav {
     font-size: 1.4rem;
 }
 
+#subject-second>a {
+    text-decoration: none;
+}
+
 .subject-second-b1 {
     color: black;
     margin-left: 25px;
     height: 22px;
     width: 36px;
-    text-decoration: none;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -188,16 +229,13 @@ nav {
     position: relative;
     margin: 50px 15px 0 15px;
     background: #ffffff;
-    height: 455px;
     color: #999999;
     display: block;
-    min-width: 312px;
 }
 
 .major-header {
     display: flex;
     padding: 20px 10px 15px 10px;
-    height: 175px;
     color: black;
 }
 
@@ -221,7 +259,6 @@ nav {
     white-space: normal;
     word-break: break-all;
     font-size: 1.4rem;
-    height: 92px;
     overflow: hidden;
 }
 
@@ -274,7 +311,7 @@ nav {
 }
 
 .major-7 {
-    width: 1000%;
+    width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
@@ -284,7 +321,7 @@ nav {
 }
 
 .major-8 {
-    width: 1000%;
+    width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
@@ -339,6 +376,11 @@ nav {
 
 #footer-second-one {
     color: #ffffff;
+}
+
+#footer-second-one>p {
+    height: 20px;
+    min-width: 192px;
 }
 
 #footer-f1 {

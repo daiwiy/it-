@@ -8,7 +8,30 @@ body {
     background: #fafafa;
 }
 
-#header-first {
+#header-row-first {
+    background: #ffffff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#header-first-text {
+    float: left;
+    color: #29b078;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    #header-first-one {
+        display: none;
+    }
+}
+
+#header-first-icon {
+    float: right;
+}
+
+#header-first-twe {
     height: 40px;
     display: flex;
     flex-direction: row-reverse;
@@ -16,10 +39,14 @@ body {
     background: #ffffff;
 }
 
-#header-first-one {
+#header-first-1 {
     color: black;
 }
-
+@media screen and (min-width: 769px) {
+    #header-first-twe {
+        display: none;
+    }
+}
 nav {
     background: #29b078;
 }
@@ -86,11 +113,13 @@ nav {
 .menu {
     display: none;
 }
-@media screen and (max-width: 992px) { 
+
+@media screen and (max-width: 992px) {
     .navs-one {
         margin-right: 0;
     }
 }
+
 @media screen and (max-width: 768px) {
     #header-row-second {
         display: block;
@@ -106,12 +135,19 @@ nav {
         width: 100%;
     }
     .navs li {
-        height: 40px;
+        height: 50px;
         width: 100%;
     }
-    #check-box:checked ~.navs {
+    .navs li:hover {
+        background: #00ff00;
+        border: none;
+    }
+    #check-box:checked~.navs {
         display: block;
     }
+}
+#carousel-first {
+    width: 100%;
 }
 #carousel-first {
     width: 100%;
@@ -277,10 +313,10 @@ nav {
 }
 
 #subject-fourth-twe {
-    padding: 40px 65px 60px 45px;
+    padding: 40px 65px 140px 45px;
     background: #ffffff;
     margin-left: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 230px;
     border: 1px solid #e6e6e6;
 }
 
@@ -302,6 +338,11 @@ nav {
     color: #ffffff;
 }
 
+#footer-second-one>p {
+    height: 20px;
+    min-width: 192px;
+}
+
 #footer-f1 {
     color: #ffffff;
     text-decoration: none;
@@ -320,11 +361,15 @@ nav {
 
 #footer-second-twe>img {
     width: 95px;
-    padding-left:1px; 
+    padding-left: 1px;
 }
 
 #footer-third {
     color: #ffffff;
     border-top: 1px solid #32c086;
     text-align: center;
+}
+
+#footer-third:hover {
+    text-decoration: underline;
 }
