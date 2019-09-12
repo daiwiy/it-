@@ -82,7 +82,7 @@ nav {
 
 .nav-box {
     width: 62.5%;
-    height: 100px;
+    min-height: 100px;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
@@ -132,8 +132,7 @@ nav {
 }
 
 #check-box {
-    position: absolute;
-    clip: rect(0, 0, 0, 0)
+   display: none;
 }
 
 .menu {
@@ -143,13 +142,25 @@ nav {
 @media screen and (max-width: 768px) {
     .navs {
         display: none;
+        width: 100%;
+        padding-top:80px; 
+    }
+    .navs label{
+        width: 100%;
+        margin: 0;
     }
     .menu {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        height: 40px;
+        width: 39px;
         display: block;
         background: #1d7ad9;
     }
     #check-box:checked~.navs {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -586,7 +597,7 @@ nav {
 }
 
 .footer-second {
-    height: 35px;
+    min-height: 35px;
     background: #1d7ad9;
     display: flex;
     align-items: center;
@@ -613,7 +624,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1274px) {
     html {
         font-size: 80%;
     }
@@ -752,4 +763,15 @@ nav {
         flex-direction: column;
         align-items: unset;
     }
+}
+@media screen and (max-width: 376px) {
+   .middle-first-text {
+       font-size: 16px;
+   }
+   .middle-twe-smallbox-1 {
+       font-size: 18px;
+    }
+.middle-smallbox-title {
+    font-size: 16px;
+}
 }
