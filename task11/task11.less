@@ -1,0 +1,104 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    height   : 100%;
+}
+
+@color-1: #5fc0cd;
+@color-2: #ffffff;
+@color-3: #eff0f4;
+@color-4: #eaedee;
+
+header {
+    background: @color-1;
+
+    .first {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        height         : 85px;
+        padding        : 0 30px;
+        font-size      : 3.2rem;
+        color          : @color-2;
+
+        a {
+            text-decoration: none;
+            color          : @color-2;
+        }
+
+        .one {
+            font-size: 3.6rem;
+        }
+    }
+}
+
+main {
+    background: @color-3;
+
+    .second {
+        padding-top   : 15px;
+        padding-bottom: 70px;
+        height        : 215px;
+
+        .one {
+            display        : flex;
+            align-items    : center;
+            justify-content: space-between;
+            padding-left   : 43px;
+            height         : 100px;
+            width          : auto;
+            background     : @color-2;
+            margin-bottom  : 15px;
+
+            .main-photo-one {
+                padding-right: 50px;
+                border-right : 1px solid @color-4;
+            }
+
+            .main-text-one {
+                flex        : 1;
+                padding-left: 35px;
+                height      : 100px;
+                min-width   : 10px;
+                border      : none;
+                outline     : none;
+            }
+        }
+    }
+}
+
+footer {
+    background: @color-1;
+
+    .one {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        height         : 100px;
+        width          : 100%;
+        font-size      : 3.6rem;
+        color          : @color-2;
+        background     : @color-1;
+        border         : none;
+        outline        : none;
+    }
+
+    a {
+        padding-right  : 30px;
+        padding-top    : 20px;
+        float          : right;
+        color          : @color-1;
+        font-size      : 3.2rem;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size:50%;
+    }
+}
