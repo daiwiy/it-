@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
 }
-html,
-body {
+html {
   font-size: 62.5%;
   height: 100%;
 }
@@ -12,8 +11,8 @@ header {
 }
 header .first {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 85px;
   padding: 0 30px;
   font-size: 3.2rem;
@@ -70,6 +69,7 @@ footer .one {
   background: #5fc0cd;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 footer a {
   padding-right: 30px;
