@@ -108,11 +108,11 @@ main {
             padding-left: 30px;
 
             li {
+                .formart;
                 list-style   : none;
                 height       : 100px;
                 padding-left : 30px;
                 border-bottom: 1px solid #e1e5e7;
-                .formart;
 
                 span {
                     color: @color-third;
@@ -186,6 +186,23 @@ footer {
     html {
         font-size: 50%;
     }
+
+    main .max-photo .round {
+        top                : 120px;
+        height             : 112px;
+        width              : 112px;
+        background-position: -40px 0;
+        background-size    : 180px;
+    }
+
+    main .max-photo .text {
+        padding-left: 170px;
+        padding-top : 145px;
+    }
+
+    main .max-photo .text .third-text {
+        padding-top: 50px;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -194,7 +211,7 @@ footer {
     }
 
     main .max-photo .text {
-        padding-left: 180px;
+        padding-left: 150px;
     }
 
     main .max-photo .text .first-text {
@@ -205,11 +222,16 @@ footer {
         padding-left: 0;
     }
 
+
     main .record .last-middle {
         padding-left: 30px;
     }
 
     html {
         font-size: 45%;
+    }
+
+    header {
+        padding: 0;
     }
 }
