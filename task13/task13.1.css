@@ -90,6 +90,9 @@ a:hover {
   text-decoration: none;
 }
 /* 重置链接a标签的鼠标滑动效果 */
+img {
+  vertical-align: top;
+}
 /* 图片在当前行内的垂直位置 */
 header {
   display: flex;
@@ -101,24 +104,78 @@ header {
   padding: 20px 4.687% 0 4.687%;
   color: #ffffff;
   font-size: 3.4rem;
+  width: 90.626%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #29bde0;
+}
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbb435;
+  font-size: 4rem;
 }
 html,
 body {
   background: #f0f0f0;
   height: 100%;
+  width: 100%;
 }
-nav a {
+.all-content {
+  display: flex;
+}
+.all-content input {
+  display: none;
+}
+.all-content .nav {
+  display: none;
+  width: 30%;
+  background: #ffffff;
+}
+.all-content .nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: right;
+  height: 100px;
+  padding-left: 10%;
+  width: 80%;
+  font-size: 2rem;
+  background: url(img/photo13.5.png) no-repeat right;
+}
+.all-content .nav li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: left;
+  color: #29bde0;
+}
+.all-content #check-box:checked ~ .nav {
+  display: block;
+}
+.all-content .former-content {
+  flex: 1;
+  height: 100%;
+}
+.all-content .former-content nav a {
   display: flex;
   margin: 25px 5.468% 0 5.468%;
   font-size: 3.4rem;
 }
-nav a .fill {
+.all-content .former-content nav a .fill {
   float: right;
   height: 115px;
   width: 15px;
   background: #ffffff;
 }
-nav a .navs {
+.all-content .former-content nav a .navs {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,13 +184,13 @@ nav a .navs {
   background: #ffffff url(img/photo2.png) no-repeat right;
   color: #9a9a9a;
 }
-main {
+.all-content .former-content main {
   position: relative;
   margin: 25px 5.468% 60px 5.468%;
   height: 775px;
   background: #ffffff;
 }
-main .small-title {
+.all-content .former-content main .small-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,10 +199,10 @@ main .small-title {
   color: #fbb435;
   border-bottom: 1px solid #fbb435;
 }
-main .get-into-btn {
+.all-content .former-content main .get-into-btn {
   padding: 30px 9.649% 0 9.649%;
 }
-main .get-into-btn div {
+.all-content .former-content main .get-into-btn div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,7 +212,7 @@ main .get-into-btn div {
   font-size: 3.2rem;
   color: #ffffff;
 }
-main .get-into-btn p {
+.all-content .former-content main .get-into-btn p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,7 +220,7 @@ main .get-into-btn p {
   font-size: 2.4rem;
   color: #838383;
 }
-main img {
+.all-content .former-content main img {
   position: absolute;
   top: 375px;
   right: 10px;
@@ -174,29 +231,42 @@ main img {
   html {
     font-size: 70%;
   }
-}
-@media screen and (max-width: 700px) {
-  html {
-    font-size: 60%;
+  .all .nav li {
+    background-size: 21px 21px;
+  }
+  .all .nav li img {
+    height: 20px;
+    width: 20px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 760px) {
   html {
     font-size: 50%;
   }
-  main img {
+}
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 50%;
+  }
+  .all .former-all main img {
     top: 389px;
     height: 28px;
     width: 14px;
   }
+  .all .former-all nav a .navs {
+    background-size: 12px 20px;
+  }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   html {
     font-size: 40%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   html {
     font-size: 30%;
+  }
+  .all .former-all main img {
+    right: 0;
   }
 }
