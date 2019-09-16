@@ -104,4 +104,21 @@ header {
   padding: 20px 4.687% 0 4.687%;
   color: #ffffff;
   font-size: 3.4rem;
+  width: 90.626%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #29bde0;
+}
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbb435;
+  font-size: 4rem;
 }
