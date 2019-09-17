@@ -178,9 +178,6 @@ main .explain-second .dl2 {
 main .explain-second .dl3 {
   width: 29.167%;
 }
-main .explain-second .dl4 {
-  width: 36.458%;
-}
 .process {
   background: #ffffff;
   padding-bottom: 70px;
@@ -238,6 +235,6 @@ footer .restart {
     padding: 0 2%;
   }
   main .result p {
-    font-size: 7.5rem ;
+    font-size: 7.5rem;
   }
 }

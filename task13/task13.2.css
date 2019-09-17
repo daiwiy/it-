@@ -63,11 +63,13 @@ button {
 }
 /* 重置表单button按钮效果 */
 body {
+  background: #ffffff;
   font-size: 62.5%;
-  height: 100%;
+  line-height: 1;
+  font-family: "黑体";
+  color: #666;
 }
 /* 重置body 页面背景为白色 */
-body,
 th,
 td,
 input,
@@ -112,6 +114,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   background: #29bde0;
 }
 footer a {
@@ -119,9 +122,11 @@ footer a {
   align-items: center;
   justify-content: center;
   background: #fbb435;
-  font-size: 4rem ;
+  font-size: 4rem;
 }
+html,
 body {
+  font-size: 62.5%;
   background: #29bde0;
 }
 header {
