@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    background: #fafafa;
+}
+
+#header-row-first {
+    background: #ffffff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#header-first-text {
+    float: left;
+    color: #29b078;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    #header-first-one {
+        display: none;
+    }
+}
+
+#header-first-icon {
+    float: right;
+}
+
+#header-first-twe {
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: #ffffff;
+}
+
+#header-first-1 {
+    color: black;
+}
+@media screen and (min-width: 769px) {
+    #header-first-twe {
+        display: none;
+    }
+}
+nav {
+    background: #29b078;
+}
+
+#header-row-second {
+    display: flex;
+}
+
+#heaedr-second {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100px;
+}
+
+.heaedr-second-one {
+    width: 107px;
+    height: 49px;
+    background-size: 107px 49px;
+    background: url(./www.jnshu.com.png) no-repeat;
+    position: relative;
+    top: 35px;
+}
+
+.navs {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+}
+
+.navs li {
+    list-style: none;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navs a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navs-one {
+    margin-right: -20px
+}
+
+.navs li:hover {
+    border-bottom: 4px solid #ffffff;
+}
+
+.navs a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#check-box {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .navs-one {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header-row-second {
+        display: block;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 40px;
+    }
+    .navs {
+        display: none;
+        width: 100%;
+    }
+    .navs li {
+        height: 50px;
+        width: 100%;
+    }
+    .navs li:hover {
+        background: #00ff00;
+        border: none;
+    }
+    #check-box:checked~.navs {
+        display: block;
+    }
+}
+#carousel-first {
+    width: 100%;
+}
+#carousel-first {
+    width: 100%;
+}
+
+#caroousel-first-photo {
+    width: 100%;
+    height: auto;
+}
+
+#subject-row {
+    background: #fafafa;
+}
+
+#subject-first-one {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#subject-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    margin-bottom: 60px;
+}
+
+#subject-third {
+    height: 65px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.subject-third-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject-third-2 {
+    font-size: 1.4rem;
+    color: #29b078;
+    width: 75px;
+    padding: 20px 0 20px 0;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-3 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-4 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-5 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-6 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-7 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-8 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-9 {
+    font-size: 1.4rem;
+    color: #29b078;
+    padding: 20px 0 20px 0;
+    width: 75px;
+    list-style-image: url(./yuan.png);
+}
+
+.subject-third-2:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-3:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-4:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-5:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-6:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-7:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-8:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+.subject-third-9:hover {
+    color: #f9a372;
+    list-style-image: url(./yuan2.png);
+}
+
+#subject-fourth-one {
+    background: #ffffff;
+    height: auto;
+    margin-left: 25px;
+    padding: 20px 65px 15px 65px;
+    border: 1px solid #e6e6e6;
+}
+
+#subject-fourth-photo {
+    float: left;
+    margin: 0 20px 0 20px;
+}
+
+#subject-fourth-text {
+    font-size: 1.4rem;
+    color: #999999;
+    min-height: 170px;
+}
+
+#subject-fourth-twe {
+    padding: 40px 65px 140px 45px;
+    background: #ffffff;
+    margin-left: 25px;
+    margin-bottom: 230px;
+    border: 1px solid #e6e6e6;
+}
+
+#subject-fourth-twe>p {
+    font-size: 1.4rem;
+    color: #999999;
+    padding-bottom: 40px;
+}
+
+#footer-row-second {
+    background: #29b078;
+}
+
+#footer-second {
+    padding: 40px 35px 35px 0;
+}
+
+#footer-second-one {
+    color: #ffffff;
+}
+
+#footer-second-one>p {
+    height: 20px;
+    min-width: 192px;
+}
+
+#footer-f1 {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#footer-f1:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+#footer-second-twe>p {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+#footer-second-twe>img {
+    width: 95px;
+    padding-left: 1px;
+}
+
+#footer-third {
+    color: #ffffff;
+    border-top: 1px solid #32c086;
+    text-align: center;
+}
+
+#footer-third:hover {
+    text-decoration: underline;
+}
