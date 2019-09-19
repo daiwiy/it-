@@ -1,0 +1,246 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+input,
+select,
+button {
+  margin: 0;
+  padding: 0;
+}
+/* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset,
+img {
+  border: 0 none;
+}
+/* 重置fieldset（表单分组）、图片的边框为0*/
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+/* 重置嵌套引用的引号类型 */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/* 重置嵌套引用*/
+input,
+select,
+textarea,
+button {
+  vertical-align: middle;
+}
+/* 重置表单控件垂直居中*/
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* 重置表单button按钮效果 */
+html,
+body {
+  background: #ffffff;
+  font-size: 62.5%;
+  line-height: 1;
+  font-family: "黑体";
+  color: #666;
+}
+/* 重置body 页面背景为白色 */
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-size: 12px;
+  line-height: 1;
+  font-family: "黑体";
+  color: #666;
+}
+/* 重置页面文字属性 */
+a {
+  color: #666;
+  text-decoration: none;
+}
+/* 重置链接a标签 */
+a:active,
+a:hover {
+  text-decoration: none;
+}
+/* 重置链接a标签的鼠标滑动效果 */
+img {
+  vertical-align: top;
+}
+/* 图片在当前行内的垂直位置 */
+header {
+  height: 40px;
+  width: 62.5%;
+  padding: 0 18.75%;
+  font-size: 1.4rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #29b078;
+  width: 62.5%;
+  padding: 0 18.75%;
+}
+nav .u-navs {
+  display: flex;
+}
+nav #u-check-box {
+  display: none;
+}
+nav .u-menu {
+  display: none;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #ffffff;
+}
+#box {
+  width: 100%;
+  /*超出部分隐藏*/
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  font-size: 0;
+  /*设置每个圆圈的位置*/
+  /*选中移动ul*/
+}
+#box label {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 40px;
+  z-index: 2;
+}
+#box .list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 300%;
+  position: absolute;
+  position: relative;
+  transition: .5s;
+}
+#box .list li {
+  float: left;
+  width: 33.333%;
+  max-height: 600px;
+}
+#box .list li img {
+  width: 100%;
+}
+#box input {
+  display: none;
+}
+#box input:checked + label {
+  background: #29b078;
+}
+#box label:nth-of-type(1) {
+  left: 48%;
+}
+#box label:nth-of-type(2) {
+  left: 50%;
+}
+#box label:nth-of-type(3) {
+  left: 52%;
+}
+#box input:nth-of-type(1):checked ~ ul {
+  left: 0;
+}
+#box input:nth-of-type(2):checked ~ ul {
+  left: -100%;
+}
+#box input:nth-of-type(3):checked ~ ul {
+  left: -200%;
+}
+#box .bn_arrows-left label {
+  display: inline-block;
+  width: 27px;
+  height: 47px;
+  line-height: 47px;
+  border: none;
+  background: url(../img/snajiao.png) no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 11.718%;
+  cursor: pointer;
+  display: none;
+}
+#box .bn_arrows-right label {
+  display: inline-block;
+  width: 27px;
+  height: 47px;
+  line-height: 47px;
+  border: none;
+  background: url(../img/photo3.png) no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 88.282%;
+  cursor: pointer;
+  display: none;
+}
+#box input:nth-of-type(1):checked ~ .bn_arrows-right label {
+  display: inline-block;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background: #ffffff;
+  color: #29b078;
+}
+header a {
+  padding-left: 15px;
+}
+nav {
+  justify-content: flex-end;
+}
+nav .u-navs {
+  margin-right: -35px;
+}
+nav .u-navs a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  color: #ffffff;
+}

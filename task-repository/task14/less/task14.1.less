@@ -1,0 +1,30 @@
+@import "./my-style-sheet.less";
+@import "./carousel-2.less";
+
+header {
+    #center;
+    justify-content: space-between;
+    background     : @color-1;
+    color          : @color-2;
+
+    & a {
+        padding-left: 15px;
+    }
+}
+
+nav {
+    justify-content: flex-end;
+
+    .u-navs {
+        margin-right: -35px;
+
+        & a {
+            #center;
+            height: 100px;
+            width : 100px;
+            cursor: pointer;
+            color : @color-1;
+        }
+    }
+}
+

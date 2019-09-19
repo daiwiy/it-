@@ -70,7 +70,7 @@ button {
 /* 重置表单button按钮效果 */
 html,
 body {
-    background: #ffffff;
+    background : #ffffff;
     font-size  : 62.5%;
     line-height: 1;
     font-family: "黑体";
@@ -109,11 +109,7 @@ img {
 }
 
 /* 图片在当前行内的垂直位置 */
-
-@color-1 : #29bde0;
-@color-2 : #f0f0f0;
-@color-3 : #ffffff;
-@color-4 : #fbb435;
+@color-1 : #ffffff;
 
 #center() {
     display        : flex;
@@ -122,15 +118,18 @@ img {
 }
 
 header {
-    #center;
-    justify-content: space-between;
-    height         : 70px;
-    background     : @color-1;
-    padding        : 20px 4.687% 0 4.687%;
-    color          : @color-3;
-    font-size      : 3.4rem;
-    width          : 90.626%;
+    height    : 40px;
+    background: @color-1;
+    padding   : 20px 18.75% 0 18.75%;
+    color     : @color-1;
+    font-size : 1.4rem;
+    width     : 62.5%;
 }
+
+
+
+
+
 
 footer {
     position: fixed;
@@ -139,9 +138,4 @@ footer {
     width     : 100%;
     background: @color-1;
 
-    a {
-        #center;
-        background: @color-4;
-        font-size : 4rem;
-    }
 }
