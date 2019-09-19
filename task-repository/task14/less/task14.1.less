@@ -1,5 +1,10 @@
 @import "./my-style-sheet.less";
-@import "./carousel-2.less";
+@import "./carousel-3.less";
+
+html,
+body {
+    background: @color-3;
+}
 
 header {
     #center;
@@ -20,11 +25,136 @@ nav {
 
         & a {
             #center;
-            height: 100px;
-            width : 100px;
-            cursor: pointer;
-            color : @color-1;
+            height   : 100px;
+            width    : 100px;
+            cursor   : pointer;
+            color    : @color-1;
+            font-size: 1.6rem;
         }
     }
 }
 
+main {
+    max-width: 62.5%;
+    margin   : 160px 18.75% 65px 18.75%;
+
+    .g-advantage {
+        display        : flex;
+        justify-content: space-between;
+        font-size      : 1.8rem;
+        margin-bottom  : 50px;
+
+        .g-box-one {
+            display       : flex;
+            align-items   : center;
+            flex-direction: column;
+            width         : 25%;
+
+            div {
+                height       : 60px;
+                margin-bottom: 33px;
+            }
+
+            .title {
+                margin-bottom: 33px;
+            }
+
+            .detailed {
+                max-width: 225px;
+                font-size: 1.6rem;
+            }
+        }
+
+        .g-box-twe {
+            .g-box-one();
+
+            div {
+                height       : 60px;
+                margin-bottom: 33px;
+            }
+
+            .detailed {
+                max-width: 255px;
+                font-size: 1.6rem;
+            }
+        }
+
+        .g-box-three {
+            display  : flex;
+            max-width: 260px;
+
+            .g-subject {
+                padding-right: 55px;
+            }
+
+            .g-small-box {
+                padding-top: 60px;
+
+                p {
+                    color         : @color-2;
+                    padding-bottom: 17px;
+                }
+
+                div {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .g-learning-method {
+        font-size: 1.8rem;
+
+        .title {
+            display       : flex;
+            flex-direction: column-reverse;
+            align-items   : center;
+            height        : 100px;
+        }
+
+        .box {
+            display        : flex;
+            justify-content: space-between;
+            width          : 100%;
+            min-height     : 175px;
+
+            .introduce {
+                display    : flex;
+                align-items: center;
+
+                .sign {
+                    #center;
+                    min-width    : 35px;
+                    height       : 35px;
+                    border-radius: 50%;
+                    margin-right : 17px;
+                    color        : @color-2;
+                    background   : @color-1;
+                }
+
+                .text {
+                    max-width: 155px;
+                    font-size: 1.4rem;
+                    color    : #a8a8a8;
+                }
+
+                .next-step {
+                    height: 20px;
+                    width : 20px;
+                    margin: auto 25px auto 37px;
+                }
+            }
+        }
+    }
+
+
+    .title {
+        margin-top : 40px;
+        text-align : center;
+        padding-top: 20px;
+        height     : 90px;
+        font-size  : 1.8rem;
+    }
+
+
+}

@@ -1,0 +1,201 @@
+#m-box-1 {
+    width: 100%;
+    /*超出部分隐藏*/
+    overflow  : hidden;
+    position  : relative;
+    text-align: center;
+    font-size : 0;
+
+    label {
+        width        : 15px;
+        height       : 15px;
+        border-radius: 50%;
+        border       : 1px solid white;
+        position     : absolute;
+        bottom       : 40px;
+        z-index      : 2;
+    }
+
+    .m-list {
+        margin    : 0;
+        padding   : 0;
+        list-style: none;
+        width     : 300%;
+        position  : absolute;
+        position  : relative;
+        transition: .5s;
+
+        li {
+            float     : left;
+            width     : 33.333%;
+            max-height: 600px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    /*设置每个圆圈的位置*/
+    input:checked+label {
+        background: #29b078;
+    }
+
+    label:nth-of-type(1) {
+        left: 48%;
+    }
+
+    label:nth-of-type(2) {
+        left: 50%;
+    }
+
+    label:nth-of-type(3) {
+        left: 52%;
+    }
+
+
+    /*选中移动ul*/
+
+    input:nth-of-type(1):checked~ul {
+        left: 0;
+    }
+
+    input:nth-of-type(2):checked~ul {
+        left: -100%;
+    }
+
+    input:nth-of-type(3):checked~ul {
+        left: -200%;
+    }
+
+    .bn_arrows-left label {
+        display    : inline-block;
+        width      : 27px;
+        height     : 47px;
+        line-height: 47px;
+        border     : none;
+        background : url(../img/task14.1/snajiao.png) no-repeat;
+        position   : absolute;
+        top        : 50%;
+        left       : 11.718%;
+        cursor     : pointer;
+        display    : none;
+    }
+
+    .bn_arrows-right label {
+        display    : inline-block;
+        width      : 27px;
+        height     : 47px;
+        line-height: 47px;
+        border     : none;
+        background : url(../img/task14.1/photo3.png) no-repeat;
+        position   : absolute;
+        top        : 50%;
+        left       : 88.282%;
+        cursor     : pointer;
+        display    : none;
+    }
+
+    input:nth-of-type(1):checked~.bn_arrows-right label:nth-of-type(2),
+    input:nth-of-type(1):checked~.bn_arrows-left label:nth-of-type(3) {
+        display: inline-block;
+    }
+
+    input:nth-of-type(2):checked~.bn_arrows-right label:nth-of-type(3),
+    input:nth-of-type(2):checked~.bn_arrows-left label:nth-of-type(1) {
+        display: inline-block;
+    }
+
+    input:nth-of-type(3):checked~.bn_arrows-right label:nth-of-type(1),
+    input:nth-of-type(3):checked~.bn_arrows-left label:nth-of-type(2) {
+        display: inline-block;
+    }
+
+}
+
+#m-box-2 {
+    width: 100%;
+    /*超出部分隐藏*/
+    overflow  : hidden;
+    position  : relative;
+    text-align: center;
+    font-size : 0;
+
+    label {
+        width        : 13px;
+        height       : 13px;
+        border-radius: 50%;
+        border       : 1px solid white;
+        position     : absolute;
+        bottom       : -25px;
+        z-index      : 2;
+        background   : #29b078;
+    }
+
+    .m-list {
+        margin    : 0;
+        padding   : 0;
+        list-style: none;
+        width     : 400%;
+        position  : absolute;
+        position  : relative;
+        transition: .5s;
+
+        li {
+            float     : left;
+            width     : 25%;
+            max-height: 600px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    /*设置每个圆圈的位置*/
+    input:checked+label {
+        background: #29b078;
+    }
+
+    label:nth-of-type(1) {
+        left: 47%;
+    }
+
+    label:nth-of-type(2) {
+        left: 49%;
+    }
+
+    label:nth-of-type(3) {
+        left: 51%;
+    }
+
+    label:nth-of-type(4) {
+        left: 53%;
+    }
+
+    /*选中移动ul*/
+
+    input:nth-of-type(1):checked~ul {
+        left: 0;
+    }
+
+    input:nth-of-type(2):checked~ul {
+        left: -100%;
+    }
+
+    input:nth-of-type(3):checked~ul {
+        left: -200%;
+    }
+
+    input:nth-of-type(4):checked~ul {
+        left: -300%;
+    }
+}

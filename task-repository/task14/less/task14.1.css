@@ -129,7 +129,7 @@ footer {
   width: 100%;
   background: #ffffff;
 }
-#box {
+#m-box-1 {
   width: 100%;
   /*超出部分隐藏*/
   overflow: hidden;
@@ -139,7 +139,7 @@ footer {
   /*设置每个圆圈的位置*/
   /*选中移动ul*/
 }
-#box label {
+#m-box-1 label {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -148,7 +148,7 @@ footer {
   bottom: 40px;
   z-index: 2;
 }
-#box .list {
+#m-box-1 .m-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -157,66 +157,146 @@ footer {
   position: relative;
   transition: .5s;
 }
-#box .list li {
+#m-box-1 .m-list li {
   float: left;
   width: 33.333%;
   max-height: 600px;
 }
-#box .list li img {
+#m-box-1 .m-list li img {
   width: 100%;
 }
-#box input {
+#m-box-1 input {
   display: none;
 }
-#box input:checked + label {
+#m-box-1 input:checked + label {
   background: #29b078;
 }
-#box label:nth-of-type(1) {
+#m-box-1 label:nth-of-type(1) {
   left: 48%;
 }
-#box label:nth-of-type(2) {
+#m-box-1 label:nth-of-type(2) {
   left: 50%;
 }
-#box label:nth-of-type(3) {
+#m-box-1 label:nth-of-type(3) {
   left: 52%;
 }
-#box input:nth-of-type(1):checked ~ ul {
+#m-box-1 input:nth-of-type(1):checked ~ ul {
   left: 0;
 }
-#box input:nth-of-type(2):checked ~ ul {
+#m-box-1 input:nth-of-type(2):checked ~ ul {
   left: -100%;
 }
-#box input:nth-of-type(3):checked ~ ul {
+#m-box-1 input:nth-of-type(3):checked ~ ul {
   left: -200%;
 }
-#box .bn_arrows-left label {
+#m-box-1 .bn_arrows-left label {
   display: inline-block;
   width: 27px;
   height: 47px;
   line-height: 47px;
   border: none;
-  background: url(../img/snajiao.png) no-repeat;
+  background: url(../img/task14.1/snajiao.png) no-repeat;
   position: absolute;
   top: 50%;
   left: 11.718%;
   cursor: pointer;
   display: none;
 }
-#box .bn_arrows-right label {
+#m-box-1 .bn_arrows-right label {
   display: inline-block;
   width: 27px;
   height: 47px;
   line-height: 47px;
   border: none;
-  background: url(../img/photo3.png) no-repeat;
+  background: url(../img/task14.1/photo3.png) no-repeat;
   position: absolute;
   top: 50%;
   left: 88.282%;
   cursor: pointer;
   display: none;
 }
-#box input:nth-of-type(1):checked ~ .bn_arrows-right label {
+#m-box-1 input:nth-of-type(1):checked ~ .bn_arrows-right label:nth-of-type(2),
+#m-box-1 input:nth-of-type(1):checked ~ .bn_arrows-left label:nth-of-type(3) {
   display: inline-block;
+}
+#m-box-1 input:nth-of-type(2):checked ~ .bn_arrows-right label:nth-of-type(3),
+#m-box-1 input:nth-of-type(2):checked ~ .bn_arrows-left label:nth-of-type(1) {
+  display: inline-block;
+}
+#m-box-1 input:nth-of-type(3):checked ~ .bn_arrows-right label:nth-of-type(1),
+#m-box-1 input:nth-of-type(3):checked ~ .bn_arrows-left label:nth-of-type(2) {
+  display: inline-block;
+}
+#m-box-2 {
+  width: 100%;
+  /*超出部分隐藏*/
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  font-size: 0;
+  /*设置每个圆圈的位置*/
+  /*选中移动ul*/
+}
+#m-box-2 label {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  bottom: -25px;
+  z-index: 2;
+  background: #29b078;
+}
+#m-box-2 .m-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 400%;
+  position: absolute;
+  position: relative;
+  transition: .5s;
+}
+#m-box-2 .m-list li {
+  float: left;
+  width: 25%;
+  max-height: 600px;
+}
+#m-box-2 .m-list li img {
+  width: 100%;
+}
+#m-box-2 input {
+  display: none;
+}
+#m-box-2 input:checked + label {
+  background: #29b078;
+}
+#m-box-2 label:nth-of-type(1) {
+  left: 47%;
+}
+#m-box-2 label:nth-of-type(2) {
+  left: 49%;
+}
+#m-box-2 label:nth-of-type(3) {
+  left: 51%;
+}
+#m-box-2 label:nth-of-type(4) {
+  left: 53%;
+}
+#m-box-2 input:nth-of-type(1):checked ~ ul {
+  left: 0;
+}
+#m-box-2 input:nth-of-type(2):checked ~ ul {
+  left: -100%;
+}
+#m-box-2 input:nth-of-type(3):checked ~ ul {
+  left: -200%;
+}
+#m-box-2 input:nth-of-type(4):checked ~ ul {
+  left: -300%;
+}
+html,
+body {
+  background: #fafafa;
 }
 header {
   display: flex;
@@ -243,4 +323,121 @@ nav .u-navs a {
   width: 100px;
   cursor: pointer;
   color: #ffffff;
+  font-size: 1.6rem;
+}
+main {
+  max-width: 62.5%;
+  margin: 160px 18.75% 65px 18.75%;
+}
+main .g-advantage {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+main .g-advantage .g-box-one {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+main .g-advantage .g-box-one div {
+  height: 60px;
+  margin-bottom: 33px;
+}
+main .g-advantage .g-box-one .title {
+  margin-bottom: 33px;
+}
+main .g-advantage .g-box-one .detailed {
+  max-width: 225px;
+  font-size: 1.6rem;
+}
+main .g-advantage .g-box-twe {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+main .g-advantage .g-box-twe div {
+  height: 60px;
+  margin-bottom: 33px;
+}
+main .g-advantage .g-box-twe .title {
+  margin-bottom: 33px;
+}
+main .g-advantage .g-box-twe .detailed {
+  max-width: 225px;
+  font-size: 1.6rem;
+}
+main .g-advantage .g-box-twe div {
+  height: 60px;
+  margin-bottom: 33px;
+}
+main .g-advantage .g-box-twe .detailed {
+  max-width: 255px;
+  font-size: 1.6rem;
+}
+main .g-advantage .g-box-three {
+  display: flex;
+  max-width: 260px;
+}
+main .g-advantage .g-box-three .g-subject {
+  padding-right: 55px;
+}
+main .g-advantage .g-box-three .g-small-box {
+  padding-top: 60px;
+}
+main .g-advantage .g-box-three .g-small-box p {
+  color: #29b078;
+  padding-bottom: 17px;
+}
+main .g-advantage .g-box-three .g-small-box div {
+  padding-bottom: 30px;
+}
+main .g-learning-method {
+  font-size: 1.8rem;
+}
+main .g-learning-method .title {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 100px;
+}
+main .g-learning-method .box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 175px;
+}
+main .g-learning-method .box .introduce {
+  display: flex;
+  align-items: center;
+}
+main .g-learning-method .box .introduce .sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 17px;
+  color: #29b078;
+  background: #ffffff;
+}
+main .g-learning-method .box .introduce .text {
+  max-width: 155px;
+  font-size: 1.4rem;
+  color: #a8a8a8;
+}
+main .g-learning-method .box .introduce .next-step {
+  height: 20px;
+  width: 20px;
+  margin: auto 25px auto 37px;
+}
+main .title {
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 20px;
+  height: 90px;
+  font-size: 1.8rem;
 }
