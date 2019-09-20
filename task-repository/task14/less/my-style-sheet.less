@@ -122,37 +122,115 @@ img {
 }
 
 header {
-    height   : 40px;
-    width    : 62.5%;
-    padding  : 0 18.75%;
-    font-size: 1.4rem;
+    height    : 40px;
+    width     : 100%;
+    font-size : 1.4rem;
+    background: @color-1;
+    color     : @color-2;
+
+    .box {
+        #center;
+        justify-content: space-between;
+        width          : 62.5%;
+        min-width      : 975px;
+        height         : 40px;
+        margin         : 0 auto;
+
+    }
 }
 
 nav {
+    position: relative;
     #center;
     background: @color-2;
-    width     : 62.5%;
-    padding   : 0 18.75%;
+    width     : 100%;
+    min-height: 80px;
 
-    .u-navs {
-        display: flex;
+    .navs {
+        display        : flex;
+        justify-content: flex-end;
+        width          : 62.5%;
+        min-width      : 975px;
+        margin-right   : -70px;
+
+        & a {
+            #center;
+            height   : 100px;
+            width    : 100px;
+            cursor   : pointer;
+            color    : @color-1;
+            font-size: 1.6rem;
+        }
     }
 
-    #u-check-box {
+    input {
         display: none;
     }
 
-    .u-menu {
-        display: none;
+    .menu {
+        position: absolute;
+        top     : 20px;
+        right   : 20px;
+        display : none;
     }
 }
 
 
 footer {
-    position: fixed;
-    bottom  : 0;
-    #center;
     width     : 100%;
-    background: @color-1;
+    background: @color-2;
+
+    .my-information {
+        width      : 62.5%;
+        margin     : 0 auto;
+        min-width  : 975px;
+        padding-top: 40px;
+        background : @color-2;
+        color      : @color-1;
+        font-size  : 1.6rem;
+
+        p {
+            height        : 20px;
+            padding-bottom: 20px;
+        }
+
+        a {
+            padding-top   : 20px;
+            padding-bottom: 7px;
+            color         : #fff;
+            font-size     : 1.4rem;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #fff;
+        }
+
+        .box-left {
+            display: inline-block;
+            width  : 30%;
+        }
+
+        .box-center {
+            display: inline-block;
+            width  : 30%;
+        }
+
+        .box-right {
+            float        : right;
+            padding-right: 7.83%;
+
+            div {
+                padding-bottom: 7px;
+            }
+        }
+    }
+
+    .my-filing-number {
+        #center;
+        height    : 30px;
+        color     : #ffffff;
+        background: @color-2;
+        border-top: 1px solid #32c086;
+    }
 
 }

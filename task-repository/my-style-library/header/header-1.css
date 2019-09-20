@@ -1,0 +1,16 @@
+header {
+  height: 40px;
+  width: 100%;
+  font-size: 1.4rem;
+  background: #000000;
+  color: #000000;
+}
+header .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 62.5%;
+  min-width: 975px;
+  height: 40px;
+  margin: 0 auto;
+}

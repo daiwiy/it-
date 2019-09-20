@@ -6,49 +6,23 @@ body {
     background: @color-3;
 }
 
-header {
-    #center;
-    justify-content: space-between;
-    background     : @color-1;
-    color          : @color-2;
-
-    & a {
-        padding-left: 15px;
-    }
-}
-
-nav {
-    justify-content: flex-end;
-
-    .u-navs {
-        margin-right: -35px;
-
-        & a {
-            #center;
-            height   : 100px;
-            width    : 100px;
-            cursor   : pointer;
-            color    : @color-1;
-            font-size: 1.6rem;
-        }
-    }
-}
-
 main {
-    max-width: 62.5%;
-    margin   : 160px 18.75% 65px 18.75%;
+    width    : 62.5%;
+    min-width: 975px;
+    margin   : 160px auto 0 auto;
 
     .g-advantage {
         display        : flex;
         justify-content: space-between;
+        flex-wrap      : wrap;
         font-size      : 1.8rem;
-        margin-bottom  : 50px;
 
         .g-box-one {
             display       : flex;
             align-items   : center;
             flex-direction: column;
             width         : 25%;
+            margin-bottom : 50px;
 
             div {
                 height       : 60px;
@@ -62,6 +36,7 @@ main {
             .detailed {
                 max-width: 225px;
                 font-size: 1.6rem;
+                color    : #999999;
             }
         }
 
@@ -80,8 +55,9 @@ main {
         }
 
         .g-box-three {
-            display  : flex;
-            max-width: 260px;
+            display      : flex;
+            max-width    : 300px;
+            margin-bottom: 50px;
 
             .g-subject {
                 padding-right: 55px;
@@ -103,7 +79,9 @@ main {
     }
 
     .g-learning-method {
-        font-size: 1.8rem;
+        display       : flex;
+        flex-direction: column;
+        font-size     : 1.8rem;
 
         .title {
             display       : flex;
@@ -116,11 +94,12 @@ main {
             display        : flex;
             justify-content: space-between;
             width          : 100%;
-            min-height     : 175px;
 
             .introduce {
-                display    : flex;
-                align-items: center;
+                display        : flex;
+                align-items    : center;
+                justify-content: space-between;
+                min-height     : 175px;
 
                 .sign {
                     #center;
@@ -147,8 +126,7 @@ main {
         }
     }
 
-
-    .title {
+    .excellent-children {
         margin-top : 40px;
         text-align : center;
         padding-top: 20px;
@@ -156,5 +134,209 @@ main {
         font-size  : 1.8rem;
     }
 
+    .friend {
+        #center;
+        height   : 160px;
+        font-size: 1.8rem;
+    }
 
+    .my-friend {
+        display      : flex;
+        flex-wrap    : wrap;
+        margin-bottom: 90px;
+        min-width    : 975px;
+        background   : #ffffff;
+
+        a {
+            #center;
+            width        : 20%;
+            height       : 180px;
+            border-bottom: 1px solid #e2e2e2;
+        }
+
+        a:hover {
+            box-shadow: 0px 0px 7px #e2e2e2;
+        }
+    }
+}
+
+.link {
+    background: @color-1;
+    width     : 100%;
+    font-size : 1.4rem;
+
+    .small-title {
+        #center;
+        width    : 62.5%;
+        min-width: 975px;
+        margin   : 0 auto;
+        height   : 70px;
+        font-size: 1.8rem;
+    }
+
+    .friend-website {
+        display  : flex;
+        flex-wrap: wrap;
+        width    : 62.5%;
+        min-width: 975px;
+        margin   : 0 auto;
+
+        ul {
+            display        : flex;
+            justify-content: space-between;
+            width          : 47%;
+            padding-right  : 3%;
+            height         : 31px;
+
+
+            li {
+                list-style   : disc;
+                height       : 20px;
+                margin-bottom: 10px;
+            }
+
+            li:hover {
+                border-bottom: 1px solid #29b078;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    nav .navs {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    main .g-learning-method .box {
+        flex-wrap: wrap;
+    }
+
+    header .box,
+    nav .navs {
+        min-width: 0;
+    }
+
+    main,
+    .link .small-title,
+    .link .friend-website,
+    footer .my-information,
+    main .my-friend {
+        min-width: 0;
+        width    : 100%;
+    }
+
+    main .g-advantage .g-box-one,
+    main .g-advantage .g-box-twe,
+    main .g-advantage .g-box-three {
+        width: 50%;
+    }
+
+    nav .navs {
+        margin-right: -70px;
+    }
+
+    main .my-friend a,
+    .link .friend-website ul,
+    footer .my-information .box-left,
+    footer .my-information .box-center,
+    main .g-learning-method .box .introduce {
+        width: 100%;
+    }
+
+    footer .my-information .box-right {
+        float: none;
+
+    }
+
+    #m-box-2 .m-list li {
+        flex-direction: column;
+    }
+
+    #m-box-2 {
+        height: 1350px;
+    }
+
+    #m-box-2 .m-list li .u-box {
+        width        : auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: left;
+    }
+
+    nav .navs,
+    main .g-advantage .g-box-three .g-subject {
+        display    : none;
+        width      : 100%;
+        padding-top: 60px;
+    }
+
+    nav .navs a {
+        height: 50px;
+        width : auto;
+    }
+
+    nav .navs a:hover {
+        background: #32c086;
+    }
+
+    #check-box:checked~.navs,
+    nav .menu {
+        display: block;
+    }
+
+    main .g-advantage .g-box-one,
+    main .g-advantage .g-box-twe,
+    header .box,
+    nav .navs {
+        width: 100%;
+    }
+
+    main .g-advantage .g-box-three {
+        max-width      : 100%;
+        width          : 100%;
+        justify-content: center;
+    }
+
+    #m-box-2 label:nth-of-type(1) {
+        left: 41%;
+    }
+
+    #m-box-2 label:nth-of-type(2) {
+        left: 47%;
+    }
+
+    #m-box-2 label:nth-of-type(3) {
+        left: 53%;
+    }
+
+    #m-box-2 label:nth-of-type(4) {
+        left: 59%;
+    }
+
+    #m-box-1 label:nth-of-type(1) {
+        left  : 44%;
+        bottom: 5px;
+    }
+
+    #m-box-1 label:nth-of-type(2) {
+        left  : 50%;
+        bottom: 5px;
+    }
+
+    #m-box-1 label:nth-of-type(3) {
+        left  : 56%;
+        bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
 }

@@ -1,0 +1,37 @@
+nav {
+    position       : relative;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    background     : #000000;
+    width          : 100%;
+    min-height     : 80px;
+
+    .navs {
+        display        : flex;
+        justify-content: flex-end;
+        width          : 62.5%;
+        min-width      : 975px;
+        margin-right   : -70px;
+
+        & a {
+            #center;
+            height   : 100px;
+            width    : 100px;
+            cursor   : pointer;
+            color    : @color-1;
+            font-size: 1.6rem;
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top     : 20px;
+        right   : 20px;
+        display : none;
+    }
+}
