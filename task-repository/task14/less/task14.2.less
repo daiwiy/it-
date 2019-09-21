@@ -70,8 +70,10 @@ main {
                 border-bottom : 1px solid #d0d6d9;
 
                 .text-1 {
-                    padding  : 0 8px;
-                    font-size: 1.4rem;
+                    padding    : 0 8px;
+                    font-size  : 1.4rem;
+                    white-space: normal;
+                    word-break: break-all;
 
                     .text-2 {
                         padding  : 15px 0;
@@ -202,7 +204,7 @@ main {
     }
 
     main .detailed-introduction .first-kind {
-        width: 100%;
+        width    : 100%;
     }
 
     main .detailed-introduction {
@@ -211,7 +213,11 @@ main {
 
     main #type a {
         margin: 0;
-        width : 100%;
+        width : auto;
+    }
+
+    html {
+        font-size: 10%;
     }
 
     main #type {
