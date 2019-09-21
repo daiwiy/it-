@@ -1,0 +1,220 @@
+@import "./my-style-sheet.less";
+
+html,
+body {
+    background: @color-3;
+}
+
+main {
+    width         : 62.5%;
+    min-width     : 975px;
+    margin        : 0 auto;
+    padding-bottom: 240px;
+
+    p {
+        #center;
+        justify-content: left;
+        border-bottom  : 1px solid #d0d6d9;
+    }
+
+    .current-location {
+        height   : 80px;
+        font-size: 1.6rem;
+
+        a {
+            color: @color-2;
+        }
+    }
+
+    #type {
+        min-height: 60px;
+        font-size : 1.4rem;
+
+        a {
+            #center;
+            height : 20px;
+            padding: 0 4px;
+            margin : 0 14px;
+        }
+
+        a:hover {
+            background: @color-2;
+            color     : @color-1;
+        }
+    }
+
+    #first-type {
+        height   : 80px;
+        font-size: 1.6rem;
+
+    }
+
+    .detailed-introduction {
+        #center;
+        justify-content: left;
+        flex-wrap      : wrap;
+
+
+        .first-kind {
+            position   : relative;
+            margin     : 50px 3% 0 0;
+            padding-top: 20px;
+            width      : 31%;
+            border     : 1px solid #d0d6d9;
+
+            // 布局中靠右那个margin在html里删了
+            .kind-header {
+                display       : flex;
+                padding-left  : 10px;
+                padding-bottom: 17px;
+                border-bottom : 1px solid #d0d6d9;
+
+                .text-1 {
+                    padding  : 0 8px;
+                    font-size: 1.4rem;
+
+                    .text-2 {
+                        padding  : 15px 0;
+                        font-size: 1.6rem;
+                        border   : none;
+                    }
+                }
+            }
+
+            .kind-subject {
+                display  : flex;
+                flex-wrap: wrap;
+
+                .dl1 {
+                    #center;
+                    justify-content: left;
+                    padding-left   : 10px;
+                    height         : 40px;
+                    width          : 46%;
+                    border-bottom  : 1px solid #d0d6d9;
+                    border-right   : 1px solid #d0d6d9;
+                }
+
+                .dl2 {
+                    .dl1;
+                    flex        : 1;
+                    border-right: none;
+                }
+
+                .dl3 {
+                    .dl1;
+                    width       : 46.5%;
+                    border-right: none;
+                }
+
+                .dl4 {
+                    .dl1;
+                    justify-content: center;
+                    height         : 107px;
+                    width          : 40%;
+                }
+
+                .dl5 {
+                    flex: 1;
+
+                    p {
+                        #center;
+                        justify-content: space-between;
+                        height         : 35px;
+                        flex           : 1;
+                        padding-right  : 12px;
+                        padding-left   : 25px;
+                        color          : black;
+                    }
+                }
+            }
+
+            .kind-footer-1 {
+                height      : 40px;
+                flex        : 1;
+                padding-left: 10px;
+            }
+
+            .kind-footer-2 {
+                .kind-footer-1;
+                color: black;
+            }
+
+            .introduce {
+                position        : absolute;
+                top             : 25%;
+                left            : 10%;
+                height          : 240px;
+                width           : 50%;
+                color           : #ffffff;
+                z-index         : -1;
+                background-color: rgba(51, 51, 51, 0);
+                animation       : myfirst 1s;
+                font-size       : 1.6rem;
+
+            }
+
+            &:hover .introduce {
+                top             : 0;
+                left            : 0;
+                height          : 451px;
+                width           : 100%;
+                background-color: rgba(51, 51, 51, 0.7);
+                transition      : width .5s, height .5s, transform .5s;
+                transform       : rotate(360deg);
+                z-index         : 2;
+            }
+        }
+    }
+
+    #second-type {
+        #first-type;
+    }
+
+    #third-type {
+        #first-type;
+    }
+
+    #four-type {
+        #first-type;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        min-width: 0;
+        width    : 80%;
+    }
+
+    main .detailed-introduction .first-kind {
+        width : 100%;
+        margin: 50px 0 0 0;
+    }
+
+    main .detailed-introduction {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+
+    main .detailed-introduction .first-kind {
+        width: 100%;
+    }
+
+    main .detailed-introduction {
+        justify-content: center;
+    }
+
+    main #type a {
+        margin: 0;
+        width : 100%;
+    }
+
+    main #type {
+        flex-direction: column;
+    }
+}

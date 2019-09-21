@@ -1,0 +1,484 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+input,
+select,
+button {
+  margin: 0;
+  padding: 0;
+}
+/* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset,
+img {
+  border: 0 none;
+}
+/* 重置fieldset（表单分组）、图片的边框为0*/
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+/* 重置嵌套引用的引号类型 */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/* 重置嵌套引用*/
+input,
+select,
+textarea,
+button {
+  vertical-align: middle;
+}
+/* 重置表单控件垂直居中*/
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* 重置表单button按钮效果 */
+html,
+body {
+  background: #ffffff;
+  font-size: 62.5%;
+  line-height: 1;
+  font-family: "黑体";
+  color: #666;
+}
+/* 重置body 页面背景为白色 */
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-size: 12px;
+  line-height: 1;
+  font-family: "黑体";
+  color: #666;
+}
+/* 重置页面文字属性 */
+a {
+  color: #666;
+  text-decoration: none;
+}
+/* 重置链接a标签 */
+a:active,
+a:hover {
+  text-decoration: none;
+}
+/* 重置链接a标签的鼠标滑动效果 */
+img {
+  vertical-align: top;
+}
+/* 图片在当前行内的垂直位置 */
+header {
+  height: 40px;
+  width: 100%;
+  font-size: 1.4rem;
+  background: #ffffff;
+  color: #29b078;
+}
+header .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 62.5%;
+  min-width: 975px;
+  height: 40px;
+  margin: 0 auto;
+}
+header .your-account-number {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  display: none;
+  height: 40px;
+  width: 100%;
+}
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #29b078;
+  width: 100%;
+  min-height: 80px;
+}
+nav .navs {
+  display: flex;
+  justify-content: flex-end;
+  width: 62.5%;
+  min-width: 975px;
+  margin-right: -70px;
+}
+nav .navs a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+nav input {
+  display: none;
+}
+nav .menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  background: #29b078;
+}
+footer .my-information {
+  width: 62.5%;
+  margin: 0 auto;
+  min-width: 975px;
+  padding-top: 40px;
+  background: #29b078;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+footer .my-information p {
+  height: 20px;
+  padding-bottom: 20px;
+}
+footer .my-information a {
+  padding-top: 20px;
+  padding-bottom: 7px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+footer .my-information a:hover {
+  border-bottom: 1px solid #fff;
+}
+footer .my-information .box-left {
+  display: inline-block;
+  width: 30%;
+}
+footer .my-information .box-center {
+  display: inline-block;
+  width: 30%;
+}
+footer .my-information .box-right {
+  float: right;
+  padding-right: 7.83%;
+}
+footer .my-information .box-right div {
+  padding-bottom: 7px;
+}
+footer .my-filing-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: #ffffff;
+  background: #29b078;
+  border-top: 1px solid #32c086;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: left;
+  }
+  nav .navs,
+  main .g-advantage .g-box-three .g-subject {
+    display: none;
+    width: 100%;
+    padding-top: 60px;
+  }
+  nav .navs a {
+    height: 50px;
+    width: auto;
+  }
+  nav .navs a:hover {
+    background: #32c086;
+  }
+  #check-box:checked ~ .navs,
+  nav .menu {
+    display: block;
+  }
+  header .box {
+    display: none;
+  }
+  header .your-account-number {
+    display: flex;
+  }
+  header .box,
+  nav .navs {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .box,
+  nav .navs {
+    min-width: 0;
+  }
+  footer .my-information {
+    min-width: 0;
+    width: 100%;
+  }
+  nav .navs {
+    margin-right: -70px;
+  }
+  footer .my-information .box-right {
+    float: none;
+  }
+  footer .my-information .box-left,
+  footer .my-information .box-center {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  nav .navs {
+    margin-right: 0;
+  }
+}
+html,
+body {
+  background: #fafafa;
+}
+main {
+  width: 62.5%;
+  min-width: 975px;
+  margin: 0 auto;
+  padding-bottom: 240px;
+}
+main p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: left;
+  border-bottom: 1px solid #d0d6d9;
+}
+main .current-location {
+  height: 80px;
+  font-size: 1.6rem;
+}
+main .current-location a {
+  color: #29b078;
+}
+main #type {
+  min-height: 60px;
+  font-size: 1.4rem;
+}
+main #type a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  padding: 0 4px;
+  margin: 0 14px;
+}
+main #type a:hover {
+  background: #29b078;
+  color: #ffffff;
+}
+main #first-type {
+  height: 80px;
+  font-size: 1.6rem;
+}
+main .detailed-introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+main .detailed-introduction .first-kind {
+  position: relative;
+  margin: 50px 3% 0 0;
+  padding-top: 20px;
+  width: 31%;
+  border: 1px solid #d0d6d9;
+}
+main .detailed-introduction .first-kind .kind-header {
+  display: flex;
+  padding-left: 10px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #d0d6d9;
+}
+main .detailed-introduction .first-kind .kind-header .text-1 {
+  padding: 0 8px;
+  font-size: 1.4rem;
+}
+main .detailed-introduction .first-kind .kind-header .text-1 .text-2 {
+  padding: 15px 0;
+  font-size: 1.6rem;
+  border: none;
+}
+main .detailed-introduction .first-kind .kind-subject {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .detailed-introduction .first-kind .kind-subject .dl1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: left;
+  padding-left: 10px;
+  height: 40px;
+  width: 46%;
+  border-bottom: 1px solid #d0d6d9;
+  border-right: 1px solid #d0d6d9;
+}
+main .detailed-introduction .first-kind .kind-subject .dl2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: left;
+  padding-left: 10px;
+  height: 40px;
+  width: 46%;
+  border-bottom: 1px solid #d0d6d9;
+  border-right: 1px solid #d0d6d9;
+  flex: 1;
+  border-right: none;
+}
+main .detailed-introduction .first-kind .kind-subject .dl3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: left;
+  padding-left: 10px;
+  height: 40px;
+  width: 46%;
+  border-bottom: 1px solid #d0d6d9;
+  border-right: 1px solid #d0d6d9;
+  width: 46.5%;
+  border-right: none;
+}
+main .detailed-introduction .first-kind .kind-subject .dl4 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 10px;
+  height: 40px;
+  width: 46%;
+  border-bottom: 1px solid #d0d6d9;
+  border-right: 1px solid #d0d6d9;
+  justify-content: center;
+  height: 107px;
+  width: 40%;
+}
+main .detailed-introduction .first-kind .kind-subject .dl5 {
+  flex: 1;
+}
+main .detailed-introduction .first-kind .kind-subject .dl5 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  height: 35px;
+  flex: 1;
+  padding-right: 12px;
+  padding-left: 25px;
+  color: black;
+}
+main .detailed-introduction .first-kind .kind-footer-1 {
+  height: 40px;
+  flex: 1;
+  padding-left: 10px;
+}
+main .detailed-introduction .first-kind .kind-footer-2 {
+  height: 40px;
+  flex: 1;
+  padding-left: 10px;
+  color: black;
+}
+main .detailed-introduction .first-kind .introduce {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  height: 240px;
+  width: 50%;
+  color: #ffffff;
+  z-index: -1;
+  background-color: rgba(51, 51, 51, 0);
+  animation: myfirst 1s;
+  font-size: 1.6rem;
+}
+main .detailed-introduction .first-kind:hover .introduce {
+  top: 0;
+  left: 0;
+  height: 451px;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+  transition: width .5s, height .5s, transform .5s;
+  transform: rotate(360deg);
+  z-index: 2;
+}
+main #second-type {
+  height: 80px;
+  font-size: 1.6rem;
+}
+main #third-type {
+  height: 80px;
+  font-size: 1.6rem;
+}
+main #four-type {
+  height: 80px;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 992px) {
+  main {
+    min-width: 0;
+    width: 80%;
+  }
+  main .detailed-introduction .first-kind {
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+  main .detailed-introduction {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  main .detailed-introduction .first-kind {
+    width: 100%;
+  }
+  main .detailed-introduction {
+    justify-content: center;
+  }
+  main #type a {
+    margin: 0;
+    width: 100%;
+  }
+  main #type {
+    flex-direction: column;
+  }
+}

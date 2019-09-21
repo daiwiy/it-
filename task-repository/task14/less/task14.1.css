@@ -114,6 +114,14 @@ header .box {
   height: 40px;
   margin: 0 auto;
 }
+header .your-account-number {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  display: none;
+  height: 40px;
+  width: 100%;
+}
 nav {
   position: relative;
   display: flex;
@@ -198,6 +206,63 @@ footer .my-filing-number {
   color: #ffffff;
   background: #29b078;
   border-top: 1px solid #32c086;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: left;
+  }
+  nav .navs,
+  main .g-advantage .g-box-three .g-subject {
+    display: none;
+    width: 100%;
+    padding-top: 60px;
+  }
+  nav .navs a {
+    height: 50px;
+    width: auto;
+  }
+  nav .navs a:hover {
+    background: #32c086;
+  }
+  #check-box:checked ~ .navs,
+  nav .menu {
+    display: block;
+  }
+  header .box {
+    display: none;
+  }
+  header .your-account-number {
+    display: flex;
+  }
+  header .box,
+  nav .navs {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .box,
+  nav .navs {
+    min-width: 0;
+  }
+  footer .my-information {
+    min-width: 0;
+    width: 100%;
+  }
+  nav .navs {
+    margin-right: -70px;
+  }
+  footer .my-information .box-right {
+    float: none;
+  }
+  footer .my-information .box-left,
+  footer .my-information .box-center {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  nav .navs {
+    margin-right: 0;
+  }
 }
 #m-box-1 {
   width: 100%;
@@ -579,23 +644,13 @@ main .my-friend a:hover {
 .link .friend-website ul li:hover {
   border-bottom: 1px solid #29b078;
 }
-@media screen and (max-width: 1080px) {
-  nav .navs {
-    margin-right: 0;
-  }
-}
 @media screen and (max-width: 991px) {
   main .g-learning-method .box {
     flex-wrap: wrap;
   }
-  header .box,
-  nav .navs {
-    min-width: 0;
-  }
   main,
   .link .small-title,
   .link .friend-website,
-  footer .my-information,
   main .my-friend {
     min-width: 0;
     width: 100%;
@@ -605,18 +660,10 @@ main .my-friend a:hover {
   main .g-advantage .g-box-three {
     width: 50%;
   }
-  nav .navs {
-    margin-right: -70px;
-  }
   main .my-friend a,
   .link .friend-website ul,
-  footer .my-information .box-left,
-  footer .my-information .box-center,
   main .g-learning-method .box .introduce {
     width: 100%;
-  }
-  footer .my-information .box-right {
-    float: none;
   }
   #m-box-2 .m-list li {
     flex-direction: column;
@@ -630,30 +677,8 @@ main .my-friend a:hover {
   }
 }
 @media screen and (max-width: 768px) {
-  nav {
-    justify-content: left;
-  }
-  nav .navs,
-  main .g-advantage .g-box-three .g-subject {
-    display: none;
-    width: 100%;
-    padding-top: 60px;
-  }
-  nav .navs a {
-    height: 50px;
-    width: auto;
-  }
-  nav .navs a:hover {
-    background: #32c086;
-  }
-  #check-box:checked ~ .navs,
-  nav .menu {
-    display: block;
-  }
   main .g-advantage .g-box-one,
-  main .g-advantage .g-box-twe,
-  header .box,
-  nav .navs {
+  main .g-advantage .g-box-twe {
     width: 100%;
   }
   main .g-advantage .g-box-three {

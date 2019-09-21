@@ -202,26 +202,14 @@ main {
     }
 }
 
-@media screen and (max-width: 1080px) {
-    nav .navs {
-        margin-right: 0;
-    }
-}
-
 @media screen and (max-width: 991px) {
     main .g-learning-method .box {
         flex-wrap: wrap;
     }
 
-    header .box,
-    nav .navs {
-        min-width: 0;
-    }
-
     main,
     .link .small-title,
     .link .friend-website,
-    footer .my-information,
     main .my-friend {
         min-width: 0;
         width    : 100%;
@@ -233,22 +221,12 @@ main {
         width: 50%;
     }
 
-    nav .navs {
-        margin-right: -70px;
-    }
-
     main .my-friend a,
     .link .friend-website ul,
-    footer .my-information .box-left,
-    footer .my-information .box-center,
     main .g-learning-method .box .introduce {
         width: 100%;
     }
 
-    footer .my-information .box-right {
-        float: none;
-
-    }
 
     #m-box-2 .m-list li {
         flex-direction: column;
@@ -265,35 +243,10 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        justify-content: left;
-    }
-
-    nav .navs,
-    main .g-advantage .g-box-three .g-subject {
-        display    : none;
-        width      : 100%;
-        padding-top: 60px;
-    }
-
-    nav .navs a {
-        height: 50px;
-        width : auto;
-    }
-
-    nav .navs a:hover {
-        background: #32c086;
-    }
-
-    #check-box:checked~.navs,
-    nav .menu {
-        display: block;
-    }
+    
 
     main .g-advantage .g-box-one,
-    main .g-advantage .g-box-twe,
-    header .box,
-    nav .navs {
+    main .g-advantage .g-box-twe {
         width: 100%;
     }
 

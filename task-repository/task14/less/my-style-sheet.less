@@ -137,6 +137,16 @@ header {
         margin         : 0 auto;
 
     }
+
+    .your-account-number {
+        display       : flex;
+        align-items   : center;
+        flex-direction: row-reverse;
+        display       : none;
+        height        : 40px;
+        width         : 100%;
+
+    }
 }
 
 nav {
@@ -172,6 +182,7 @@ nav {
         top     : 20px;
         right   : 20px;
         display : none;
+        cursor: pointer;
     }
 }
 
@@ -233,4 +244,75 @@ footer {
         border-top: 1px solid #32c086;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: left;
+    }
+
+    nav .navs,
+    main .g-advantage .g-box-three .g-subject {
+        display    : none;
+        width      : 100%;
+        padding-top: 60px;
+    }
+
+    nav .navs a {
+        height: 50px;
+        width : auto;
+    }
+
+    nav .navs a:hover {
+        background: #32c086;
+    }
+
+    #check-box:checked~.navs,
+    nav .menu {
+        display: block;
+    }
+
+    header .box {
+        display: none;
+    }
+
+    header .your-account-number {
+        display: flex;
+    }
+    header .box,
+    nav .navs {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    header .box,
+    nav .navs {
+        min-width: 0;
+    }
+
+    footer .my-information {
+        min-width: 0;
+        width    : 100%;
+    }
+
+    nav .navs {
+        margin-right: -70px;
+    }
+
+    footer .my-information .box-right {
+        float: none;
+    }
+
+    footer .my-information .box-left,
+    footer .my-information .box-center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    nav .navs {
+        margin-right: 0;
+    }
 }
