@@ -615,19 +615,19 @@ main .my-friend a {
 main .my-friend a:hover {
   box-shadow: 0px 0px 7px #e2e2e2;
 }
-.link {
+.m-link {
   background: #ffffff;
   width: 100%;
   font-size: 1.4rem;
 }
-.link dl {
+.m-link dl {
   display: flex;
   flex-wrap: wrap;
   width: 62.5%;
   min-width: 975px;
   margin: 0 auto;
 }
-.link dl dt {
+.m-link dl dt {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -636,18 +636,18 @@ main .my-friend a:hover {
   height: 70px;
   font-size: 1.8rem;
 }
-.link dl dd {
+.m-link dl dd {
   width: 10%;
   height: 23px;
   background: url(../img/task14.1/yuan.png) no-repeat;
   background-position-y: 5px;
 }
-.link dl dd a {
+.m-link dl dd a {
   height: 14px;
   padding-bottom: 8px;
   padding-left: 12px;
 }
-.link dl dd a:hover {
+.m-link dl dd a:hover {
   border-bottom: 1px solid #29b078;
 }
 @media screen and (max-width: 992px) {
@@ -655,12 +655,12 @@ main .my-friend a:hover {
     flex-wrap: wrap;
   }
   main,
-  .link dl,
+  .m-link dl,
   main .my-friend {
     min-width: 0;
     width: 100%;
   }
-  .link dl dd {
+  .m-link dl dd {
     width: 20%;
   }
   main .g-advantage .g-box-one,
