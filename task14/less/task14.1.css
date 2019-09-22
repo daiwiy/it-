@@ -620,36 +620,34 @@ main .my-friend a:hover {
   width: 100%;
   font-size: 1.4rem;
 }
-.link .small-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 62.5%;
-  min-width: 975px;
-  margin: 0 auto;
-  height: 70px;
-  font-size: 1.8rem;
-}
-.link .friend-website {
+.link dl {
   display: flex;
   flex-wrap: wrap;
   width: 62.5%;
   min-width: 975px;
   margin: 0 auto;
 }
-.link .friend-website ul {
+.link dl dt {
   display: flex;
-  justify-content: space-between;
-  width: 47%;
-  padding-right: 3%;
-  height: 31px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 70px;
+  font-size: 1.8rem;
 }
-.link .friend-website ul li {
-  list-style: disc;
-  height: 20px;
-  margin-bottom: 10px;
+.link dl dd {
+  width: 10%;
+  height: 23px;
+  background: url(../img/task14.1/yuan.png) no-repeat;
+  background-position-y: 5px;
 }
-.link .friend-website ul li:hover {
+.link dl dd a {
+  height: 14px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+}
+.link dl dd a:hover {
   border-bottom: 1px solid #29b078;
 }
 @media screen and (max-width: 992px) {
@@ -657,11 +655,13 @@ main .my-friend a:hover {
     flex-wrap: wrap;
   }
   main,
-  .link .small-title,
-  .link .friend-website,
+  .link dl,
   main .my-friend {
     min-width: 0;
     width: 100%;
+  }
+  .link dl dd {
+    width: 20%;
   }
   main .g-advantage .g-box-one,
   main .g-advantage .g-box-twe,
@@ -669,7 +669,6 @@ main .my-friend a:hover {
     width: 50%;
   }
   main .my-friend a,
-  .link .friend-website ul,
   main .g-learning-method .box .introduce {
     width: 100%;
   }

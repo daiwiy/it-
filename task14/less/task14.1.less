@@ -172,41 +172,41 @@ main {
     width     : 100%;
     font-size : 1.4rem;
 
-    .small-title {
-        #center;
-        width    : 62.5%;
-        min-width: 975px;
-        margin   : 0 auto;
-        height   : 70px;
-        font-size: 1.8rem;
-    }
-
-    .friend-website {
+    dl {
         display  : flex;
         flex-wrap: wrap;
         width    : 62.5%;
         min-width: 975px;
         margin   : 0 auto;
 
-        ul {
-            display        : flex;
-            justify-content: space-between;
-            width          : 47%;
-            padding-right  : 3%;
-            height         : 31px;
+        dt {
+            #center;
+            width    : 100%;
+            margin   : 0 auto;
+            height   : 70px;
+            font-size: 1.8rem;
+        }
 
+        dd {
+            width                : 10%;
+            height               : 23px;
+            background           : url(../img/task14.1/yuan.png) no-repeat;
+            background-position-y: 5px;
 
-            li {
-                list-style   : disc;
-                height       : 20px;
-                margin-bottom: 10px;
+            a {
+                height        : 14px;
+                padding-bottom: 8px;
+                padding-left  : 12px;
             }
 
-            li:hover {
+            a:hover {
                 border-bottom: 1px solid #29b078;
             }
+
+
         }
     }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -215,11 +215,14 @@ main {
     }
 
     main,
-    .link .small-title,
-    .link .friend-website,
+    .link dl,
     main .my-friend {
         min-width: 0;
         width    : 100%;
+    }
+
+    .link dl dd {
+        width: 20%;
     }
 
     main .g-advantage .g-box-one,
@@ -229,7 +232,6 @@ main {
     }
 
     main .my-friend a,
-    .link .friend-website ul,
     main .g-learning-method .box .introduce {
         width: 100%;
     }
