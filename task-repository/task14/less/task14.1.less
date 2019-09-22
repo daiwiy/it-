@@ -100,6 +100,7 @@ main {
                 align-items    : center;
                 justify-content: space-between;
                 min-height     : 175px;
+                width          : 25%;
 
                 .sign {
                     #center;
@@ -112,15 +113,21 @@ main {
                 }
 
                 .text {
-                    max-width: 155px;
+                    flex     : 1;
                     font-size: 1.4rem;
                     color    : #a8a8a8;
+
                 }
 
                 .next-step {
                     height: 20px;
                     width : 20px;
                     margin: auto 25px auto 37px;
+                }
+
+                .next-step-1 {
+                    .next-step;
+                    display: none;
                 }
             }
         }
@@ -202,7 +209,7 @@ main {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     main .g-learning-method .box {
         flex-wrap: wrap;
     }
@@ -227,6 +234,13 @@ main {
         width: 100%;
     }
 
+    main .g-learning-method .box .introduce .text {
+        text-align: center;
+    }
+
+    main .g-learning-method .box .introduce .next-step-1 {
+        display: block;
+    }
 
     #m-box-2 .m-list li {
         flex-direction: column;
@@ -243,7 +257,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    
+
 
     main .g-advantage .g-box-one,
     main .g-advantage .g-box-twe {

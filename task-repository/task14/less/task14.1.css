@@ -156,6 +156,7 @@ nav .menu {
   top: 20px;
   right: 20px;
   display: none;
+  cursor: pointer;
 }
 footer {
   width: 100%;
@@ -553,6 +554,7 @@ main .g-learning-method .box .introduce {
   align-items: center;
   justify-content: space-between;
   min-height: 175px;
+  width: 25%;
 }
 main .g-learning-method .box .introduce .sign {
   display: flex;
@@ -566,7 +568,7 @@ main .g-learning-method .box .introduce .sign {
   background: #ffffff;
 }
 main .g-learning-method .box .introduce .text {
-  max-width: 155px;
+  flex: 1;
   font-size: 1.4rem;
   color: #a8a8a8;
 }
@@ -574,6 +576,12 @@ main .g-learning-method .box .introduce .next-step {
   height: 20px;
   width: 20px;
   margin: auto 25px auto 37px;
+}
+main .g-learning-method .box .introduce .next-step-1 {
+  height: 20px;
+  width: 20px;
+  margin: auto 25px auto 37px;
+  display: none;
 }
 main .excellent-children {
   margin-top: 40px;
@@ -644,7 +652,7 @@ main .my-friend a:hover {
 .link .friend-website ul li:hover {
   border-bottom: 1px solid #29b078;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   main .g-learning-method .box {
     flex-wrap: wrap;
   }
@@ -664,6 +672,12 @@ main .my-friend a:hover {
   .link .friend-website ul,
   main .g-learning-method .box .introduce {
     width: 100%;
+  }
+  main .g-learning-method .box .introduce .text {
+    text-align: center;
+  }
+  main .g-learning-method .box .introduce .next-step-1 {
+    display: block;
   }
   #m-box-2 .m-list li {
     flex-direction: column;

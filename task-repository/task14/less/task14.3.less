@@ -1,0 +1,130 @@
+@import "./my-style-sheet.less";
+
+html,
+body {
+    background: @color-3;
+}
+
+main {
+    .photo {
+        font-size: 1.6rem;
+
+        .bag-photo {
+            width: 100%;
+        }
+
+        .current-location {
+            #center;
+            justify-content: left;
+            height         : 80px;
+            width          : 62.5%;
+            min-width      : 975px;
+            margin         : 0 auto;
+
+            a {
+                color: @color-2;
+            }
+        }
+    }
+
+    .friend {
+        display      : flex;
+        width        : 62.5%;
+        min-width    : 975px;
+        margin       : 0 auto;
+        margin-bottom: 230px;
+
+        .friend-type {
+            width        : 25.5%;
+            height       : 538px;
+            margin-bottom: 50px;
+            border       : 1px solid #ededed;
+            background   : @color-1;
+
+            .friend-type-one {
+                #center;
+                height       : 65px;
+                font-size    : 1.6rem;
+                border-bottom: 1px solid #ededed;
+            }
+
+            .friend-type-twe {
+                width      : 50%;
+                margin-left: 40%;
+                padding    : 20px 0;
+
+                li {
+                    font-size       : 1.4rem;
+                    padding         : 20px 0;
+                    list-style      : circle;
+                    list-style-image: url(../img/task14.3/yuan.png);
+                    color           : @color-2;
+                    cursor          : pointer;
+                }
+            }
+        }
+
+        .detailed-information {
+            width      : 72.5%;
+            background : @color-1;
+            margin-left: 2%;
+            font-size  : 1.4rem;
+            border     : 1px solid #ededed;
+
+            .first {
+                min-height   : 160px;
+                padding      : 20px 64px 0 64px;
+                border-bottom: 1px solid #ededed;
+
+                .small-photo {
+                    float  : left;
+                    padding: 0 25px 0 21px;
+                }
+
+                .text {
+                    padding-top   : 7px;
+                    padding-bottom: 30px;
+                }
+            }
+
+            .second {
+                padding: 45px 64px 140px 64px;
+
+                p {
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main .friend {
+        display  : block;
+        min-width: 0;
+        width    : 80%;
+    }
+
+    main .photo .current-location {
+        min-width: 0;
+    }
+
+    main .friend .friend-type .friend-type-twe {
+        margin-left: 47%;
+    }
+
+    main .friend .friend-type {
+        width: 100%;
+    }
+
+    main .friend .detailed-information {
+        width : 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .friend {
+        width: 100%;
+    }
+}
