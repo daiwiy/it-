@@ -175,7 +175,7 @@ footer .g-my-information {
 }
 footer .g-my-information .u-text {
   width: 30%;
-  margin: 0;
+  margin-bottom: 40px;
 }
 footer .g-my-information .u-text dd {
   height: 22px;
@@ -235,23 +235,25 @@ footer .my-filing-number {
     width: 100%;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   header .box,
   nav .navs {
     min-width: 0;
   }
-  footer .my-information {
+  footer .my-information,
+  footer .g-my-information .u-text {
     min-width: 0;
     width: 100%;
   }
   nav .navs {
     margin-right: -70px;
   }
-  footer .my-information .box-right {
-    float: none;
+  footer .g-my-information .box-right {
+    text-align: left;
   }
-  footer .my-information .box-left,
-  footer .my-information .box-center {
+  footer .g-my-information {
+    display: block;
+    min-width: 0;
     width: 100%;
   }
 }
