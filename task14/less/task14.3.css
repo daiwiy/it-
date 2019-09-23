@@ -294,10 +294,11 @@ main .friend {
   min-width: 975px;
   margin: 0 auto;
   margin-bottom: 230px;
+  line-height: 20px;
 }
 main .friend .friend-type {
   width: 25.5%;
-  height: 538px;
+  height: 570px;
   margin-bottom: 50px;
   border: 1px solid #ededed;
   background: #ffffff;
@@ -322,6 +323,10 @@ main .friend .friend-type .friend-type-twe li {
   list-style-image: url(../img/task14.3/yuan.png);
   color: #29b078;
   cursor: pointer;
+}
+main .friend .friend-type .friend-type-twe li:hover {
+  list-style-image: url(../img/task14.3/yuan2.png);
+  color: #ff650e;
 }
 main .friend .detailed-information {
   width: 72.5%;

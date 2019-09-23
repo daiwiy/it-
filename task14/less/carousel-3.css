@@ -22,14 +22,12 @@
   padding: 0;
   list-style: none;
   width: 300%;
-  position: absolute;
   position: relative;
   transition: .5s;
 }
 #m-box-1 .m-list li {
   float: left;
   width: 33.333%;
-  max-height: 600px;
 }
 #m-box-1 .m-list li img {
   width: 100%;
