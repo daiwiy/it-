@@ -162,7 +162,8 @@ footer {
   width: 100%;
   background: #29b078;
 }
-footer .my-information {
+footer .g-my-information {
+  display: flex;
   width: 62.5%;
   margin: 0 auto;
   min-width: 975px;
@@ -170,34 +171,28 @@ footer .my-information {
   background: #29b078;
   color: #ffffff;
   font-size: 1.6rem;
-}
-footer .my-information p {
-  height: 20px;
-  padding-bottom: 20px;
-}
-footer .my-information a {
-  padding-top: 20px;
   padding-bottom: 7px;
-  color: #fff;
+}
+footer .g-my-information .u-text {
+  width: 30%;
+  margin: 0;
+}
+footer .g-my-information .u-text dd {
+  height: 22px;
+  padding-top: 20px;
   font-size: 1.4rem;
 }
-footer .my-information a:hover {
+footer .g-my-information .u-text dd a {
+  padding-bottom: 7px;
+  color: #fff;
+}
+footer .g-my-information .u-text dd a:hover {
   border-bottom: 1px solid #fff;
 }
-footer .my-information .box-left {
-  display: inline-block;
-  width: 30%;
-}
-footer .my-information .box-center {
-  display: inline-block;
-  width: 30%;
-}
-footer .my-information .box-right {
-  float: right;
+footer .g-my-information .box-right {
+  text-align: right;
+  width: 40%;
   padding-right: 7.83%;
-}
-footer .my-information .box-right div {
-  padding-bottom: 7px;
 }
 footer .my-filing-number {
   display: flex;
@@ -452,28 +447,6 @@ footer .my-filing-number {
 #m-box-2 input:nth-of-type(4):checked ~ ul {
   left: -300%;
 }
-#m-box-3 {
-  width: 100%;
-  /*超出部分隐藏*/
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  font-size: 0;
-}
-#m-box-3 .m-list {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  list-style: none;
-  width: 300%;
-}
-#m-box-3 .m-list dd {
-  float: left;
-  width: 33.333%;
-}
-#m-box-3 .m-list dd img {
-  width: 100%;
-}
 html,
 body {
   background: #fafafa;
@@ -640,14 +613,14 @@ main .my-friend a:hover {
   width: 100%;
   font-size: 1.4rem;
 }
-.m-link dl {
+.m-link .u-text {
   display: flex;
   flex-wrap: wrap;
   width: 62.5%;
   min-width: 975px;
   margin: 0 auto;
 }
-.m-link dl dt {
+.m-link .u-text dt {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -656,18 +629,18 @@ main .my-friend a:hover {
   height: 70px;
   font-size: 1.8rem;
 }
-.m-link dl dd {
+.m-link .u-text dd {
   width: 10%;
   height: 23px;
   background: url(../img/task14.1/yuan.png) no-repeat;
   background-position-y: 5px;
+  margin-bottom: 9px;
 }
-.m-link dl dd a {
-  height: 14px;
+.m-link .u-text dd a {
   padding-bottom: 8px;
   padding-left: 12px;
 }
-.m-link dl dd a:hover {
+.m-link .u-text dd a:hover {
   border-bottom: 1px solid #29b078;
 }
 @media screen and (max-width: 992px) {

@@ -167,7 +167,8 @@ nav {
             height   : 100px;
             width    : 100px;
             cursor   : pointer;
-            color    : @color-1; font-size: 1.6rem;
+            color    : @color-1;
+            font-size: 1.6rem;
         }
     }
 
@@ -189,48 +190,40 @@ footer {
     width     : 100%;
     background: @color-2;
 
-    .my-information {
-        width      : 62.5%;
-        margin     : 0 auto;
-        min-width  : 975px;
-        padding-top: 40px;
-        background : @color-2;
-        color      : @color-1;
-        font-size  : 1.6rem;
+    .g-my-information {
+        display       : flex;
+        width         : 62.5%;
+        margin        : 0 auto;
+        min-width     : 975px;
+        padding-top   : 40px;
+        background    : @color-2;
+        color         : @color-1;
+        font-size     : 1.6rem;
+        padding-bottom: 7px;
 
-        p {
-            height        : 20px;
-            padding-bottom: 20px;
-        }
+        .u-text {
+            width : 30%;
 
-        a {
-            padding-top   : 20px;
-            padding-bottom: 7px;
-            color         : #fff;
-            font-size     : 1.4rem;
-        }
+            dd {
+                height     : 22px;
+                padding-top: 20px;
+                font-size  : 1.4rem;
 
-        a:hover {
-            border-bottom: 1px solid #fff;
-        }
+                a {
+                    padding-bottom: 7px;
+                    color         : #fff;
+                }
 
-        .box-left {
-            display: inline-block;
-            width  : 30%;
-        }
-
-        .box-center {
-            display: inline-block;
-            width  : 30%;
+                a:hover {
+                    border-bottom: 1px solid #fff;
+                }
+            }
         }
 
         .box-right {
-            float        : right;
+            text-align   : right;
+            width        : 40%;
             padding-right: 7.83%;
-
-            div {
-                padding-bottom: 7px;
-            }
         }
     }
 
@@ -284,14 +277,15 @@ footer {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
 
     header .box,
     nav .navs {
         min-width: 0;
     }
 
-    footer .my-information {
+    footer .my-information,
+    footer .g-my-information .u-text {
         min-width: 0;
         width    : 100%;
     }
@@ -300,13 +294,13 @@ footer {
         margin-right: -70px;
     }
 
-    footer .my-information .box-right {
-        float: none;
+    footer .g-my-information .box-right {
+        text-align: left;
     }
-
-    footer .my-information .box-left,
-    footer .my-information .box-center {
-        width: 100%;
+    footer .g-my-information {
+        display: block;
+        min-width: 0;
+        width    : 100%;
     }
 }
 

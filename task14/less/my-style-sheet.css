@@ -162,7 +162,8 @@ footer {
   width: 100%;
   background: #29b078;
 }
-footer .my-information {
+footer .g-my-information {
+  display: flex;
   width: 62.5%;
   margin: 0 auto;
   min-width: 975px;
@@ -170,34 +171,27 @@ footer .my-information {
   background: #29b078;
   color: #ffffff;
   font-size: 1.6rem;
-}
-footer .my-information p {
-  height: 20px;
-  padding-bottom: 20px;
-}
-footer .my-information a {
-  padding-top: 20px;
   padding-bottom: 7px;
-  color: #fff;
+}
+footer .g-my-information .u-text {
+  width: 30%;
+}
+footer .g-my-information .u-text dd {
+  height: 22px;
+  padding-top: 20px;
   font-size: 1.4rem;
 }
-footer .my-information a:hover {
+footer .g-my-information .u-text dd a {
+  padding-bottom: 7px;
+  color: #fff;
+}
+footer .g-my-information .u-text dd a:hover {
   border-bottom: 1px solid #fff;
 }
-footer .my-information .box-left {
-  display: inline-block;
-  width: 30%;
-}
-footer .my-information .box-center {
-  display: inline-block;
-  width: 30%;
-}
-footer .my-information .box-right {
-  float: right;
+footer .g-my-information .box-right {
+  text-align: right;
+  width: 40%;
   padding-right: 7.83%;
-}
-footer .my-information .box-right div {
-  padding-bottom: 7px;
 }
 footer .my-filing-number {
   display: flex;
@@ -240,23 +234,25 @@ footer .my-filing-number {
     width: 100%;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   header .box,
   nav .navs {
     min-width: 0;
   }
-  footer .my-information {
+  footer .my-information,
+  footer .g-my-information .u-text {
     min-width: 0;
     width: 100%;
   }
   nav .navs {
     margin-right: -70px;
   }
-  footer .my-information .box-right {
-    float: none;
+  footer .g-my-information .box-right {
+    text-align: left;
   }
-  footer .my-information .box-left,
-  footer .my-information .box-center {
+  footer .g-my-information {
+    display: block;
+    min-width: 0;
     width: 100%;
   }
 }
