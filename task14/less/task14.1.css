@@ -599,14 +599,15 @@ main .my-friend dd {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  background: #fff;
 }
 main .my-friend dd a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20%;
+  margin: 0 auto;
   height: 180px;
-  background: #ffffff;
   border-bottom: 1px solid #e2e2e2;
 }
 main .my-friend dd a:hover {
@@ -652,8 +653,7 @@ main .my-friend dd a:hover {
     flex-wrap: wrap;
   }
   main,
-  .m-link .u-text,
-  main .my-friend dd {
+  .m-link .u-text {
     min-width: 0;
     width: 100%;
   }
