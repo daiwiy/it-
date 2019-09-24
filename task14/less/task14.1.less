@@ -141,28 +141,31 @@ main {
         font-size  : 1.8rem;
     }
 
-    .friend {
-        #center;
-        height   : 160px;
-        font-size: 1.8rem;
-    }
-
     .my-friend {
-        display      : flex;
-        flex-wrap    : wrap;
         margin-bottom: 90px;
-        min-width    : 975px;
-        background   : #ffffff;
 
-        a {
+        dt {
             #center;
-            width        : 20%;
-            height       : 180px;
-            border-bottom: 1px solid #e2e2e2;
+            height   : 160px;
+            font-size: 1.8rem;
         }
 
-        a:hover {
-            box-shadow: 0px 0px 7px #e2e2e2;
+        dd {
+            display  : flex;
+            flex-wrap: wrap;
+            width    : 100%;
+
+            a {
+                #center;
+                width        : 20%;
+                height       : 180px;
+                background   : #ffffff;
+                border-bottom: 1px solid #e2e2e2;
+            }
+
+            a:hover {
+                box-shadow: 0px 0px 7px #e2e2e2;
+            }
         }
     }
 }
@@ -172,7 +175,7 @@ main {
     width     : 100%;
     font-size : 1.4rem;
 
-    .u-tex {
+    .u-text {
         display  : flex;
         flex-wrap: wrap;
         width    : 62.5%;
@@ -212,13 +215,13 @@ main {
     }
 
     main,
-    .m-link .u-tex,
-    main .my-friend {
+    .m-link .u-text,
+    main .my-friend dd {
         min-width: 0;
         width    : 100%;
     }
 
-    .m-link .u-tex dd {
+    .m-link .u-text dd {
         width: 20%;
     }
 
@@ -228,7 +231,7 @@ main {
         width: 50%;
     }
 
-    main .my-friend a,
+    main .my-friend dd a,
     main .g-learning-method .box .introduce {
         width: 100%;
     }

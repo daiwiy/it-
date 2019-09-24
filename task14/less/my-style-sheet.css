@@ -173,20 +173,20 @@ footer .g-my-information {
   font-size: 1.6rem;
   padding-bottom: 7px;
 }
-footer .g-my-information .u-text {
+footer .g-my-information .u-tex {
   width: 30%;
   margin-bottom: 40px;
 }
-footer .g-my-information .u-text dd {
+footer .g-my-information .u-tex dd {
   height: 22px;
   padding-top: 20px;
   font-size: 1.4rem;
 }
-footer .g-my-information .u-text dd a {
+footer .g-my-information .u-tex dd a {
   padding-bottom: 7px;
   color: #fff;
 }
-footer .g-my-information .u-text dd a:hover {
+footer .g-my-information .u-tex dd a:hover {
   border-bottom: 1px solid #fff;
 }
 footer .g-my-information .box-right {
@@ -241,7 +241,7 @@ footer .my-filing-number {
     min-width: 0;
   }
   footer .my-information,
-  footer .g-my-information .u-text {
+  footer .g-my-information .u-tex {
     min-width: 0;
     width: 100%;
   }

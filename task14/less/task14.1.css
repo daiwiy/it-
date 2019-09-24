@@ -173,20 +173,20 @@ footer .g-my-information {
   font-size: 1.6rem;
   padding-bottom: 7px;
 }
-footer .g-my-information .u-text {
+footer .g-my-information .u-tex {
   width: 30%;
   margin-bottom: 40px;
 }
-footer .g-my-information .u-text dd {
+footer .g-my-information .u-tex dd {
   height: 22px;
   padding-top: 20px;
   font-size: 1.4rem;
 }
-footer .g-my-information .u-text dd a {
+footer .g-my-information .u-tex dd a {
   padding-bottom: 7px;
   color: #fff;
 }
-footer .g-my-information .u-text dd a:hover {
+footer .g-my-information .u-tex dd a:hover {
   border-bottom: 1px solid #fff;
 }
 footer .g-my-information .box-right {
@@ -241,7 +241,7 @@ footer .my-filing-number {
     min-width: 0;
   }
   footer .my-information,
-  footer .g-my-information .u-text {
+  footer .g-my-information .u-tex {
     min-width: 0;
     width: 100%;
   }
@@ -585,29 +585,31 @@ main .excellent-children {
   height: 90px;
   font-size: 1.8rem;
 }
-main .friend {
+main .my-friend {
+  margin-bottom: 90px;
+}
+main .my-friend dt {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 160px;
   font-size: 1.8rem;
 }
-main .my-friend {
+main .my-friend dd {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 90px;
-  min-width: 975px;
-  background: #ffffff;
+  width: 100%;
 }
-main .my-friend a {
+main .my-friend dd a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20%;
   height: 180px;
+  background: #ffffff;
   border-bottom: 1px solid #e2e2e2;
 }
-main .my-friend a:hover {
+main .my-friend dd a:hover {
   box-shadow: 0px 0px 7px #e2e2e2;
 }
 .m-link {
@@ -615,14 +617,14 @@ main .my-friend a:hover {
   width: 100%;
   font-size: 1.4rem;
 }
-.m-link .u-tex {
+.m-link .u-text {
   display: flex;
   flex-wrap: wrap;
   width: 62.5%;
   min-width: 975px;
   margin: 0 auto;
 }
-.m-link .u-tex dt {
+.m-link .u-text dt {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -631,18 +633,18 @@ main .my-friend a:hover {
   height: 70px;
   font-size: 1.8rem;
 }
-.m-link .u-tex dd {
+.m-link .u-text dd {
   width: 10%;
   height: 23px;
   background: url(../img/task14.1/yuan.png) no-repeat;
   background-position-y: 5px;
   margin-bottom: 9px;
 }
-.m-link .u-tex dd a {
+.m-link .u-text dd a {
   padding-bottom: 8px;
   padding-left: 12px;
 }
-.m-link .u-tex dd a:hover {
+.m-link .u-text dd a:hover {
   border-bottom: 1px solid #29b078;
 }
 @media screen and (max-width: 992px) {
@@ -650,12 +652,12 @@ main .my-friend a:hover {
     flex-wrap: wrap;
   }
   main,
-  .m-link .u-tex,
-  main .my-friend {
+  .m-link .u-text,
+  main .my-friend dd {
     min-width: 0;
     width: 100%;
   }
-  .m-link .u-tex dd {
+  .m-link .u-text dd {
     width: 20%;
   }
   main .g-advantage .g-box-one,
@@ -663,7 +665,7 @@ main .my-friend a:hover {
   main .g-advantage .g-box-three {
     width: 50%;
   }
-  main .my-friend a,
+  main .my-friend dd a,
   main .g-learning-method .box .introduce {
     width: 100%;
   }
