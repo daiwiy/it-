@@ -1,29 +1,13 @@
 body,
 div,
 dl,
-dt,
-dd,
 ul,
 ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
+dd,
 form,
-fieldset,
-legend,
-textarea,
 p,
-blockquote,
-th,
 input,
-select,
-button {
+select {
   margin: 0;
   padding: 0;
 }
@@ -60,6 +44,7 @@ button {
   border: 0 none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0;
 }
 /* 重置表单button按钮效果 */
 html,
@@ -71,8 +56,6 @@ body {
   color: #666;
 }
 /* 重置body 页面背景为白色 */
-th,
-td,
 input,
 select,
 textarea,
@@ -144,9 +127,11 @@ nav .navs a {
   justify-content: center;
   height: 100px;
   width: 100px;
-  cursor: pointer;
   color: #ffffff;
   font-size: 1.6rem;
+}
+nav .navs a:hover {
+  background: #32c086;
 }
 nav input {
   display: none;
@@ -216,9 +201,6 @@ footer .my-filing-number {
   nav .navs a {
     height: 50px;
     width: auto;
-  }
-  nav .navs a:hover {
-    background: #32c086;
   }
   #check-box:checked ~ .navs,
   nav .menu {

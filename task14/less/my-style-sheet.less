@@ -1,29 +1,13 @@
 body,
 div,
 dl,
-dt,
-dd,
 ul,
 ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
+dd,
 form,
-fieldset,
-legend,
-textarea,
 p,
-blockquote,
-th,
 input,
-select,
-button {
+select {
     margin : 0;
     padding: 0
 }
@@ -64,7 +48,8 @@ button {
 button {
     border          : 0 none;
     background-color: transparent;
-    cursor          : pointer
+    cursor          : pointer;
+    padding         : 0;
 }
 
 /* 重置表单button按钮效果 */
@@ -78,8 +63,6 @@ body {
 }
 
 /* 重置body 页面背景为白色 */
-th,
-td,
 input,
 select,
 textarea,
@@ -166,9 +149,12 @@ nav {
             #center;
             height   : 100px;
             width    : 100px;
-            cursor   : pointer;
             color    : @color-1;
             font-size: 1.6rem;
+        }
+
+        a:hover {
+            background: #32c086;
         }
     }
 
@@ -208,9 +194,10 @@ footer {
             dd {
                 height     : 22px;
                 padding-top: 20px;
-                font-size  : 1.4rem;
+                font-size     : 1.4rem;
 
                 a {
+
                     padding-bottom: 7px;
                     color         : #fff;
                 }
@@ -252,10 +239,6 @@ footer {
     nav .navs a {
         height: 50px;
         width : auto;
-    }
-
-    nav .navs a:hover {
-        background: #32c086;
     }
 
     #check-box:checked~.navs,

@@ -24,6 +24,7 @@
   width: 300%;
   position: relative;
   transition: .5s;
+  overflow: hidden;
 }
 #m-box-1 .m-list li {
   float: left;
@@ -108,8 +109,8 @@
   overflow: hidden;
   position: relative;
   text-align: center;
-  height: 460px;
   font-size: 0;
+  height: 470px;
   /*设置每个圆圈的位置*/
   /*选中移动ul*/
 }
@@ -132,6 +133,7 @@
   width: 400%;
   position: absolute;
   transition: .1s;
+  overflow: hidden;
 }
 #m-box-2 .m-list li {
   display: flex;
@@ -147,6 +149,7 @@
   border: 1px solid #eeeded;
 }
 #m-box-2 .m-list li .u-box p {
+  min-width: 152px;
   padding-top: 35px;
   padding-bottom: 28px;
   font-size: 1.8rem;
