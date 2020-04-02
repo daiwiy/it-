@@ -263,3 +263,504 @@ https://segmentfault.com/a/1190000014018604
 
 关于回流和重绘还是比较简单的看了一下
 
+
+
+这个是link和@import的区别和优缺点比较
+
+
+
+还有关于面试里的问题比较多
+
+文档内巨量的基础知识
+
+https://www.cnblogs.com/autismtune/p/5210116.html
+
+XML dom 和html dom的关系大概是继承（这个是很久以前的东西，没找到答案）
+
+XHTML 是html的版本并不是XML
+
+对XML具体参考：
+
+https://www.w3school.com.cn/xml/xml_intro.asp
+
+收获：
+
+重新学习了关于dom的概念并进行深究：
+
+首先dom是个标准是个规范：“W3C 文档对象模型 （DOM） 是中立于平台和语言的接口，它允许程序和脚本动态地访问和更新文档的内容、结构和样式。”
+
+W3C文档对象模型也是dom；
+
+编程接口也是dom的一种：定义了HTML和XML文档的逻辑结构和文档操作的编程接口。
+
+总结：DOM是一种标准，他定义了html和xml文档的逻辑结构和文档操作的编程接口，这种接口是中立于平台和语言的，它允许程序和脚本动态地访问和更新文档的内容、结构和样式。”
+
+如果要简单好记：dom是一个标准，这个标准规定了文档对象怎么解析成dom树的，所以又被称为文档对象模型，编程接口则是对象方法和对象属性，它允许程序和脚本动态地访问和更新文档的内容、结构和样式。
+
+
+HTML DOM 是：
+
+HTML 的标准对象模型，html
+HTML 的标准编程接口，xml
+W3C 标准
+
+
+
+HTML DOM appendChild() 方法
+appendChild() 方法可向节点的子节点列表的末尾添加新的子节点。
+
+提示：如果文档树中已经存在了 newchild，它将从文档树中删除，然后重新插入它的新位置。如果 newchild 是 DocumentFragment 节点，则不会直接插入它，而是把它的子节点按序插入当前节点的 childNodes[] 数组的末尾。
+
+你可以使用 appendChild() 方法移除元素到另外一个元素。
+
+
+语法
+node.appendChild(node)
+参数
+参数	类型	描述
+node	节点对象	必须。你要添加的节点对象。
+返回值
+类型	描述
+节点对象	添加的节点
+技术细节
+DOM 版本	Core Level 1 Node Object
+
+
+
+
+
+
+HTML DOM removeChild() 方法
+removeChild() 方法指定元素的某个指定的子节点。以 Node 对象返回被删除的节点，如果节点不存在则返回 null。
+
+
+语法
+node.removeChild(node)
+参数
+参数	类型	描述
+node	节点对象	必须。 你要移除的节点对象。
+返回值
+类型	描述
+节点对象	移除的节点
+技术细节
+DOM 版本	Core Level 1 Node Object
+
+
+
+HTML DOM createElement() 方法
+
+定义和用法
+createElement() 方法通过指定名称创建一个元素
+
+语法
+document.createElement(nodename)
+参数
+参数	类型	描述
+nodename	String	必须。创建元素的名称。
+返回值
+类型	描述
+元素对象	创建的元素节点
+技术细节
+DOM 版本	Core Level 1 Document Object
+
+
+HTML DOM replaceChild() Method
+
+定义和用法
+replaceChild() 方法可将某个子节点替换为另一个。
+
+新节点可以是文本中已存在的，或者是你新创建的。
+
+语法
+node.replaceChild(newnode,oldnode)
+参数
+参数	类型	描述
+newnode	Node 对象	必须。你要插入的节点对象。
+oldnode	Node object	必须。你要移除的节点对象。
+返回值
+类型	描述
+Node object	替换的节点
+技术细节
+DOM 版本	Core Level 1 Node Object
+
+
+
+
+
+
+HTML DOM childNodes 属性
+定义和用法
+
+childNodes 属性返回包含被选节点的子节点的 NodeList。
+
+提示： 如果选定的节点没有子节点，则该属性返回不包含节点的 NodeList。如需循环子节点列表，使用 nextSibling 属性，要比使用父对象的 childNodes 列表效率更高。
+
+浏览器支语法
+element.childNodes
+技术细节
+返回值：	NodeList 对象, 代表节点集合。
+DOM 版本	Core Level 1
+
+
+这个返回值：是xml dom里的NodeList 对象所以每次使用都要打印出来看下，xml和html还是有不同
+
+
+
+
+原生js修改html文本使用innerHtml，修改属性使用.style.属性 进行修改
+
+（权重值高于内联但是小于！important）使用原生js获取css属性并修改：
+
+判断的原因是ie不支持getcomputestyle而是有自己的currentStyle：
+
+function getStyle(element, attr) {
+
+        if(element.currentStyle) {
+
+                return element.currentStyle[attr];
+
+        } else {
+
+                return getComputedStyle(element, false)[attr];
+
+        }
+
+}
+
+
+从资源到dom树的构成的过程：
+
+
+
+
+
+
+
+
+
+
+
+
+
+自适应和响应式的区别：
+
+自适应：需要开发多套界面适应不同的屏幕宽度；响应式开发一套界面适应全部的屏幕宽度
+
+
+理论上来说，响应式布局在任何情况下都比自适应布局好一些，但在某些情况下自适应布局更切实际。
+
+自适应布局可以让你的设计更加可控，因为你只需要考虑几种状态就万事大吉了。
+
+但在响应式布局中你可能需要面对非常多状态——是的，大部分状态之间的区别很小，但它们又的确是不同的，这样一来就很难确切搞清你的设计会是什么样。
+
+HTML DOM setAttribute() 方法
+
+
+
+
+
+定义和用法
+setAttribute() 方法添加指定的属性，并为其赋指定的值。
+
+如果这个指定的属性已存在，则仅设置/更改值。
+
+语法
+element.setAttribute(attributename,attributevalue)
+参数
+参数	类型	描述
+attributename	String	必需。您希望添加的属性的名称。
+attributevalue	String	必需。您希望添加的属性值。
+返回值
+无返回值。
+
+
+
+伪类：
+
+CSS 伪类(Pseudo-classes)
+CSS伪类是用来添加一些选择器的特殊效果。
+
+
+
+css计数器：
+
+js的全军方法
+
+typeof (变量) === （数据类型）：判断数据类型却不报错 
+
+
+
+parseInt：parseInt方法用于将字符串转为整数。
+如果字符串头部有空格，空格会被自动去除。
+
+如果parseInt的参数不是字符串，则会先转为字符串再转换。
+
+字符串转为整数的时候，是一个个字符依次转换，如果遇到不能转为数字的字符，就不再进行下去，返回已经转好的部分
+
+如果字符串的第一个字符不能转化为数字（后面跟着数字的正负号除外），返回NaN
+
+如果字符串以0x或0X开头，parseInt会将其按照十六进制数解析。
+
+parseInt('0x10') // 16
+
+如果字符串以0开头，将其按照10进制解析。
+
+parseInt('011') // 11
+
+
+
+对于那些会自动转为科学计数法的数字，parseInt会将科学计数法的表示方法视为字符串，因此导致一些奇怪的结果。
+
+parseInt(1000000000000000000000.5) // 1
+
+// 等同于
+
+parseInt('1e+21') // 1
+
+parseInt(0.0000008) // 8
+
+// 等同于
+
+parseInt('8e-7') // 8
+
+
+
+parseInt方法还可以接受第二个参数（2到36之间），表示被解析的值的进制，返回该值对应的十进制数。默认情况下，parseInt的第二个参数为10，即默认是十进制转十进制。
+
+但是这个要慎用因为科学计数法和种种js数字的特殊性及其容易出问题：
+
+如果要用先看一遍文档：
+
+https://wangdoc.com/javascript/types/number.html
+
+
+
+
+
+parseFloat:parseFloat方法用于将一个字符串转为浮点数
+
+parseFloat('3.14') // 3.14
+
+
+
+如果字符串符合科学计数法，则会进行相应的转换。
+
+
+parseFloat('314e-2') // 3.14
+
+parseFloat('0.0314E+2') // 3.14
+
+
+
+如果字符串包含不能转为浮点数的字符，则不再进行往后转换，返回已经转好的部分。
+
+parseFloat('3.14more non-digit characters') // 3.14
+
+
+
+
+parseFloat方法会自动过滤字符串前导的空格。
+
+parseFloat('\t\v\r12.34\n ') // 12.34
+
+
+如果参数不是字符串，或者字符串的第一个字符不能转化为浮点数，则返回NaN。
+
+
+
+
+上面代码中，尤其值得注意，parseFloat会将空字符串转为NaN。
+
+这些特点使得parseFloat的转换结果不同于Number函数。
+
+
+
+
+
+
+字符串：
+
+字符串就是零个或多个排在一起的字符，放在单引号或双引号之中
+
+单引号字符串的内部，可以使用双引号。双引号字符串的内部，可以使用单引号。
+
+'key = "value"'
+
+"It's a long journey"
+
+
+
+如果要在单引号字符串的内部，使用单引号，就必须在内部的单引号前面加上反斜杠，用来转义。双引号字符串内部使用双引号，也是如此。
+
+'Did she say \'Hello\'?'
+
+// "Did she say 'Hello'?"
+
+
+
+连接运算符（+）可以连接多个单行字符串，将长字符串拆成多行书写，输出的时候也是单行。
+
+果想输出多行字符串，有一种利用多行注释的变通方法。
+
+(function () { /*
+
+line 1
+
+line 2
+
+line 3
+
+*/}).toString().split('\n').slice(1, -1).join('\n')
+
+// "line 1
+
+// line 2
+
+// line 3"
+
+
+
+length属性返回字符串的长度，该属性也是无法改变的。
+
+
+
+
+
+对象：
+对象就是一组“键值对”（key-value）的集合，是一种无序的复合数据集合。
+
+
+
+键名：
+如果键名是数值，会被自动转为字符串。
+
+
+上面代码中，对象obj的所有键名虽然看上去像数值，实际上都被自动转成了字符串。
+
+如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。
+
+对象的每一个键名又称为“属性”（property），它的“键值”可以是任何数据类型。如果一个属性的值为函数，通常把这个属性称为“方法”，它可以像函数那样调用。
+
+var obj = {
+
+  p: function (x) {
+
+    return 2 * x;
+
+  }
+
+};
+
+obj.p(1) // 2
+
+上面代码中，对象obj的属性p，就指向一个函数。
+
+如果属性的值还是一个对象，就形成了链式引用。
+
+
+
+var o1 = {};
+
+var o2 = { bar: 'hello' };
+
+o1.foo = o2;
+
+o1.foo.bar // "hello"
+
+上面代码中，对象o1的属性foo指向对象o2，就可以链式引用o2的属性。
+
+对象的属性之间用逗号分隔，最后一个属性后面可以加逗号（trailing comma），也可以不加。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+函数的重复声明 # 
+如果同一个函数被多次声明，后面的声明就会覆盖前面的声明。
+
+function f() {
+
+  console.log(1);
+
+}
+
+f() // 2
+
+function f() {
+
+  console.log(2);
+
+}
+
+f() // 2
+
+上面代码中，后一次的函数声明覆盖了前面一次。而且，由于函数名的提升（参见下文），前一次声明在任何时候都是无效的，这一点要特别注意。
+
+
+
+
+
+总之，函数执行时所在的作用域，是定义时的作用域，而不是调用时所在的作用域。
+
+很容易犯错的一点是，如果函数A调用函数B，却没考虑到函数B不会引用函数A的内部变量
+
+
+
+
+
+
+
+　这里有一个地方需要注意，函数内部声明变量的时候，一定要使用var命令。如果不用的话，你实际上声明了一个全局变量！
+ 3种跳出循环的方式的区别：
+
+3个关键词的含义和比较
+
+在 break,continue和return 三个关键字中， break,continue是化为一类的，return 是函数返回语句，但是返回的同时也将函数停止。
+
+相同之处：三个都会将此时进行的语句停止。
+
+不同之处：
+
+1、break：是立即结束语句，并跳出语句，进行下个语句执行。
+
+2、continue：是停止当前语句，并从头执行该语句。
+
+3、return：停止函数。
+
+4、使用的语句环境不一样，break和continue是用在循环或switch语句中，return是用在函数语句中。
+
+
+
+
+
+break用于完全结束一个循环，跳出循环体。不管是哪种循环，一旦在循环体中遇到break，系统将完全结束循环，开始执行循环之后的代码。 break不仅可以结束其所在的循环，还可结束其外层循环。此时需要在break后紧跟一个标签，这个标签用于标识一个外层循环。
+
+
+
+continue的功能和break有点类似，区别是continue只是中止本次循环，接着开始下一次循环。而break则是完全中止循环。
+
+
+
+return关键字并不是专门用于跳出循环的，return的功能是结束一个方法。 一旦在循环体内执行到一个return语句，return语句将会结束该方法，循环自然也随之结束。与continue和break不同的是，return直接结束整个方法，不管这个return处于多少层循环之内。
+
